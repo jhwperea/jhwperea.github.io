@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Atención Integral en Casa</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Orión, Jhwperea">
+        <meta name="author" content="Orión, Jhwperea">
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic">
+        <style>
+            html, body{
+                height: 100%;
+                width: 100%
+            }
+            body{
+                font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif
+            }
+            hr{
+                border-color: #9DB731;
+                border-width: 3px;
+                max-width: 50px
+            }
+            hr.light{
+                border-color: white
+            }
+            a{
+                -webkit-transition: all 0.35s;
+                -moz-transition: all 0.35s;
+                transition: all 0.35s;
+                color: #9DB731
+            }
+            a:hover, a:focus{
+                color: #eb3812
+            }
+            h1, h2, h3, h4, h5, h6{
+                font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif
+            }
+            p{
+                font-size: 16px;
+                line-height: 1.5;
+                margin-bottom: 20px
+            }
+            .bg-primary{
+                background-color: #9DB731
+            }
+            .bg-dark{
+                background-color: #222222;
+                color: white
+            }
+            .text-faded{
+                color: rgba(255, 255, 255, 0.7)
+            }
+            section{
+                padding: 100px 0
+            }
+            aside{
+                padding: 50px 0
+            }
+            .no-padding{
+                padding: 0
+            }
+            .navbar-default{
+                background-color: white;
+                border-color: rgba(34, 34, 34, 0.05);
+                font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+                -webkit-transition: all 0.35s;
+                -moz-transition: all 0.35s;
+                transition: all 0.35s
+            }
+            .navbar-default .navbar-header .navbar-brand{
+                color: green;
+                font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+                font-weight: 700;
+                text-transform: uppercase
+            }
+            .navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus{
+                color: green
+            }
+            .navbar-default .navbar-header .navbar-toggle{
+                font-weight: 700;
+                font-size: 12px;
+                color: green;
+                text-transform: uppercase
+            }
+            .navbar-default .nav > li > a, .navbar-default .nav > li > a:focus{
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 13px;
+                color: green
+            }
+            .navbar-default .nav > li > a:hover, .navbar-default .nav > li > a:focus:hover{
+                color: green
+            }
+            .navbar-default .nav > li.active > a, .navbar-default .nav > li.active > a:focus{
+                color: green !important;
+                background-color: white
+            }
+            .navbar-default .nav > li.active > a:hover, .navbar-default .nav > li.active > a:focus:hover{
+                background-color: white
+            }
+            @media (min-width: 768px){
+                .navbar-default{
+                    background-color: white;
+                    border-color: rgba(255, 255, 255, 0.3);
+                }
+                .navbar-default .navbar-header .navbar-brand{
+                    color: green;
+                }
+                .navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus{
+                    color: green;
+                }
+                .navbar-default .nav > li > a, .navbar-default .nav > li > a:focus{
+                    color: green;
+                }
+                .navbar-default .nav > li > a:hover, .navbar-default .nav > li > a:focus:hover{
+                    color: green;
+                }
+                .navbar-default.affix{
+                    background-color: white;
+                    border-color: rgba(34, 34, 34, 0.05);
+                }
+                .navbar-default.affix .navbar-header .navbar-brand{
+                    color: green;
+                    font-size: 14px;
+                }
+                .navbar-default.affix .navbar-header .navbar-brand:hover, .navbar-default.affix .navbar-header .navbar-brand:focus{
+                    color: green;
+                }
+                .navbar-default.affix .nav > li > a, .navbar-default.affix .nav > li > a:focus{
+                    color: green;
+                }
+                .navbar-default.affix .nav > li > a:hover, .navbar-default.affix .nav > li > a:focus:hover{
+                    color: green;
+                }
+            }
+            header{
+                position: relative;
+                width: 100%;
+                min-height: auto;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                background-size: cover;
+                -o-background-size: cover;
+                background-position: center;
+                background-image: url('img/header.jpg');
+                text-align: center;
+                color: white
+            }
+            header .header-content{
+                position: relative;
+                text-align: center;
+                padding: 100px 15px 100px;
+                width: 100%
+            }
+            header .header-content .header-content-inner h1{
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 30px
+            }
+            header .header-content .header-content-inner hr{
+                margin: 30px auto
+            }
+            header .header-content .header-content-inner p{
+                font-weight: 300;
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 16px;
+                margin-bottom: 50px
+            }
+            @media (min-width: 768px){
+                header{
+                    min-height: 100%;
+                }
+                header .header-content{
+                    position: absolute;
+                    top: 50%;
+                    -webkit-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    padding: 0 50px;
+                }
+                header .header-content .header-content-inner{
+                    max-width: 1000px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                header .header-content .header-content-inner h1{
+                    font-size: 50px;
+                }
+                header .header-content .header-content-inner p{
+                    font-size: 18px;
+                    max-width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+            .section-heading{
+              margin-top: 0
+            }
+            .service-box{
+              max-width: 400px;
+              margin: 50px auto 0
+            }
+            @media (min-width: 992px){
+              .service-box{
+                margin: 20px auto 0;
+              }
+            }
+            .service-box p{
+              margin-bottom: 0
+            }
+            .portfolio-box{
+              position: relative;
+              display: block;
+              max-width: 650px;
+              margin: 0 auto
+            }
+            .portfolio-box .portfolio-box-caption{
+                color: white;
+                opacity: 0;
+                display: block;
+                background: rgba(240, 95, 64, 0.9);
+                position: absolute;
+                bottom: 0;
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                -webkit-transition: all 0.35s;
+                -moz-transition: all 0.35s;
+                transition: all 0.35s
+            }
+            .portfolio-box .portfolio-box-caption .portfolio-box-caption-content{
+                width: 100%;
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%)
+            }
+            .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category, .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name{
+                font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+                padding: 0 15px
+            }
+            .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category{
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 14px
+            }
+            .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name{
+                font-size: 18px
+            }
+            .portfolio-box:hover .portfolio-box-caption{
+                opacity: 1
+            }
+            .portfolio-box:focus{
+              outline: none
+            }
+            @media (min-width: 768px){
+              .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category{
+                font-size: 16px;
+              }
+              .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name{
+                font-size: 22px;
+              }
+            }
+            .call-to-action h2{
+                margin: 0 auto 20px
+            }
+            .text-primary{
+                color: #9DB731
+            }
+            .no-gutter > [class*='col-']{
+                padding-right: 0;
+                padding-left: 0
+            }
+            .btn-default{
+                color: #222222;
+                background-color: white;
+                border-color: white;
+                -webkit-transition: all 0.35s;
+                -moz-transition: all 0.35s;
+                transition: all 0.35s
+            }
+            .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default{
+                color: #222222;
+                background-color: #f2f2f2;
+                border-color: #ededed
+            }
+            .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default{
+                background-image: none
+            }
+            .btn-default.disabled, .btn-default[disabled], fieldset[disabled] .btn-default, .btn-default.disabled:hover, .btn-default[disabled]:hover, fieldset[disabled] .btn-default:hover, .btn-default.disabled:focus, .btn-default[disabled]:focus, fieldset[disabled] .btn-default:focus, .btn-default.disabled.focus, .btn-default[disabled].focus, fieldset[disabled] .btn-default.focus, .btn-default.disabled:active, .btn-default[disabled]:active, fieldset[disabled] .btn-default:active, .btn-default.disabled.active, .btn-default[disabled].active, fieldset[disabled] .btn-default.active{
+                background-color: white;
+                border-color: white
+            }
+            .btn-default .badge{
+                color: white;
+                background-color: #222222
+            }
+            .btn-primary{
+                color: white;
+                background-color: #9DB731;
+                border-color: #9DB731;
+                -webkit-transition: all 0.35s;
+                -moz-transition: all 0.35s;
+                transition: all 0.35s
+            }
+            .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary{
+                color: white;
+                background-color: #ee4b28;
+                border-color: #ed431f
+            }
+            .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary{
+                background-image: none
+            }
+            .btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled.focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary.focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary.active{
+                background-color: #9DB731;
+                border-color: #9DB731
+            }
+            .btn-primary .badge{
+                color: #9DB731;
+                background-color: white
+            }
+            .btn{
+                font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+                border: none;
+                border-radius: 300px;
+                font-weight: 700;
+                text-transform: uppercase
+            }
+            .btn-xl{
+                padding: 15px 30px
+            }
+            ::-moz-selection{
+                color: white;
+                text-shadow: none;
+                background: #222222
+            }
+            ::selection{
+                color: white;
+                text-shadow: none;
+                background: #222222
+            }
+            img::selection{
+                color: white;
+                background: transparent
+            }
+            img::-moz-selection{
+                color: white;
+                background: transparent
+            }
+            body{
+                webkit-tap-highlight-color: #222222
+            }
+            .titulos{
+                padding: .5em;
+                border-radius: 25px;
+                color: white;
+                font-size: 1.5em
+            }
+            .text-green{
+                color: green
+            }
+            footer{
+                padding: 5%;
+                background-color: green;
+                color: white;
+                text-align: center
+            }
+            footer div{
+                border: solid 1px white dotted
+            }
+            #ventajas{
+                background-image: url(img/ventajas.png);
+                background-size: cover
+            }
+            #ventajas2{
+                background-image: url(img/ventajas2.png);
+                background-size: cover
+            }
+            .padding{
+                padding: 0 1em
+            }
+            .carta{
+                background-color: rgba(0,0,0,0.1);
+                padding: 1em
+            }
+            .text-lightgreen{
+                color: #9DB731
+            }
+            #about, #contact{
+                background-image: url(img/about.jpg);
+                background-size: cover;
+                color: white;
+                padding: 5%
+            }
+            #mainNav{
+                box-shadow: 1px 1px 5px green
+            }
+        </style>
+    </head>
+    <body id="top">
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand scroll" href="#top">
+                        <img src="img/logo.png" alt="" style="width:30%" class="sm-hidden">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="scroll" href="#top">Inicio</a></li>
+                        <li><a class="scroll" href="#about">Nosotros</a></li>
+                        <li><a class="scroll" href="#services">Servicios</a></li>
+                        <li><a class="scroll" href="#ventajas">Ventajas</a></li>
+                        <li><a class="scroll" href="#contact">Contáctenos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <div class="header-content">
+                <div class="header-content-inner">
+                    <h1 id="homeHeading" class="text-green">La salud en la</h1>
+                    <h2 class="text-lightgreen">Puerta de tu casa</h2>
+                    <hr>
+                    <h3 class="text-muted">Mejora la calidad de vida de las personas que amas</h3>
+                    <a href="http://aic.managerclinic.com.co" target="_blank" class="btn btn-primary btn-xl scroll">Acceso a Manager Clinic</a>
+                </div>
+            </div>
+        </header>
+        <div id="about" class="carousel slide text-center" data-ride="carousel" data-interval="false">
+            <div class="clearfix"><br><br><br></div>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="clearfix"></div>
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <h2 class="section-heading">¿Quienes somos?</h2>
+                        <hr class="light">
+                        <p class="text-justify">
+                            AIC Atención Integral en Casa SAS constituida desde el año 2012, es una institución prestadora de servicios de salud que ofrece soluciones a los problemas de salud mediante la aplicación de estándares de calidad basados en la evidencia científica actual y en una política de seguridad del paciente que faciliten la recuperación y/o rehabilitación de la persona enferma en fase aguda o crónica a través de las intervenciones de un equipo multidisciplinario.<br>AIC Atención Integral en Casa SAS presta servicios de Salud a nivel domiciliario dirigidos a personas con patologías agudas o crónicas y con alto riesgo de complicaciones con el propósito de alcanzar el control de su patología y mejorar su calidad de vida apoyados por un equipo de profesionales competentes en diversas disciplinas, con cobertura en todo el territorio vallecaucano.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="clearfix"></div>
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <h2 class="section-heading">Misión</h2>
+                        <hr class="light">
+                        <p class="text-justify">
+                            Ofrecer soluciones a los problemas de salud de las personas de nuestro cuidado, aplicando la política de seguridad del paciente y estándares de calidad basados en la evidencia científica medica que facilite la recuperación y/o  rehabilitación de la persona  enferma en fase aguda o crónica mediante las intervenciones de nuestro equipo multidisciplinario en el ámbito domiciliario, de salud pública y gestión del riesgo en salud, mejorando su calidad de vida y la de su entorno generando retorno estable de inversión a los actores con los cuales nos relacionamos.<br><br><br><br>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="clearfix"></div>
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <h2 class="section-heading">Visión</h2>
+                        <hr class="light">
+                        <p class="text-justify">
+                            En atención integral en casa aspiramos a ser una institución prestadora de servicios que tenga la capacidad de incursionar en nuevos mercados al igual que tener una estrecha relación de mutuo beneficio con los distintos actores involucrados en todo el proceso de atención.<br>También aspiramos a que nuestro recurso humano tenga un gran sentido de pertenencia y satisfacción propia que se refleje en la satisfacción propia para nuestros clientes.<br><br><br><br>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="clearfix"></div>
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <h2 class="section-heading">Política de seguridad</h2>
+                        <hr class="light">
+                        <p class="text-justify">
+                            En AIC Atención Integral En Casa asumimos la seguridad del paciente como un gran compromiso y componente prioritario que promueve y desarrolla acciones efectivas para crear una cultura de seguridad en los pacientes, su familia y nuestro equipo multidisciplinario; orientadas a identificar, gestionar y prevenir los riesgos y eventos adversos que se deriven de todos los procesos de atención, teniendo en cuenta las normas legales vigentes en el territorio Colombiano, empleando un talento humano competente.<br><br><br><br>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="clearfix"></div>
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <h2 class="section-heading">Valores Corporativos</h2>
+                        <hr class="light">
+                        <p class="text-center">
+                            · Valores corporativos<br>
+                            · Seguridad y confianza<br>
+                            · Vocación de servicio<br>
+                            · Honestidad<br>
+                            · Respeto<br>
+                            · Eficacia<br>
+                            · Trabajo en equipo<br>
+                            · Responsabilidad
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#about" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#about" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <section id="services">
+            <div class="clearfix"><br></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-green">Nuestros programas domiciliarios</h2>
+                        <hr class="primary">
+                        <div class="clearfix"><br><br></div>
+                    </div>
+                    <div class="col-xl-5 col-lg-3 col-lg-offset-2">
+                        <img src="img/medico.png" class="img-responsive">
+                    </div>
+                    <div class="col-lg-7">
+                        <span style="background-color: #9DB731" class="titulos">Paciente con secuelas neurológicas</span><br><br><br>
+                        <span style="background-color: #C56120" class="titulos">G.I.R.S (Gestión Integral de Riesgo en Salud)</span><br><br><br>
+                        <span style="background-color: #724087" class="titulos">Persona postrada en cama con patología crónica</span><br><br><br>
+                        <span style="background-color: #B93376" class="titulos">Servicios en salud en general y Otros</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 padding">
+                        <div class="carta">
+                            <h2 class="text-green">Programa domiciliario G.I.R.S (Gestión Integral del Riesgo en Salud)</h2>
+                            <p>Es una propuesta de intervención que busca mediante la implementación de estrategias de atención primaria, optimizar el seguimiento clínico y fortalecer el componente educativo familiar del paciente con enfermedades crónicas que se encuentran en alto riesgo de sufrir complicaciones o morir, debido al inadecuado control de su enfermedad por la mala adherencia al tratamiento médico en los programa instaurados por su EPS. Buscando así la estabilidad clínica, el cumplimiento de metas frente al manejo de su patología y con ello un impacto positivo en su calidad de vida.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 padding">
+                        <div class="carta">
+                            <h2 class="text-green">Programa de atención domiciliaria para el paciente con secuelas neurológicas</h2>
+                            <p>Es una propuesta de atención integral que busca mediante el apoyo psicosocial, el seguimiento clínico y el componente educativo, lograr la adherencia al tratamiento médico de la persona con patología crónica y con ello favorecer la independencia, conocimiento, rehabilitación y estabilización de su patología, impactando en el mejoramiento de su calidad de vida.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"><br></div>
+                <div class="row">
+                    <div class="col-lg-4 padding">
+                        <div class="carta">
+                            <h2 class="text-green">Persona postrada en cama con patología crónica</h2>
+                            <ul>
+                                <li>Visita médico general</li>
+                                <li>Visita psicología</li>
+                                <li>Visita trabajo social</li>
+                                <li>Visita nutrición</li>
+                                <li>Terapia enterostomal</li>
+                                <li>Terapia física</li>
+                                <li>Terapia ocupacional</li>
+                                <li>Terapia fonoaudiología</li>
+                                <li>Visita terapia respiratoria</li>
+                                <li>Asistencia auxiliar enfermerí</li>
+                                <li>Visita enfermería profesional</li>
+                                <li>Entrenamiento a cuidadores primarios</li>
+                                <li>Cuidados paliativos.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 padding">
+                        <div class="carta">
+                            <h2 class="text-green">G.I.R.S Gestión integrada del riesgo en salud</h2>
+                            <br><br>
+                            <ul>
+                                <li>Visita enfermería profesional</li>
+                                <li>Seguimiento obstétrico y puerperal</li>
+                                <li>Visita trabajo social y psicología</li>
+                                <li>Visita médica general con enfoque de riesgo</li>
+                                <li>Seguimiento a eventos de interés en salud pública.</li>
+                                <br><br><br><br>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 padding">
+                        <div class="carta">
+                            <h2 class="text-green">Servicios en salud en general</h2>
+                            <br><br><br>
+                            <ul>
+                                <li>Visita médico general</li>
+                                <li>Visita enfermería profesional</li>
+                                <li>Administración de medicamentos</li>
+                                <li>Terapia enterostomal</li>
+                                <li>Terapia respiratoria</li>
+                                <li>Terapia física</li>
+                                <br><br><br><br><br>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"><br></div>
+                <div class="row">
+                    <div class="col-lg-12 padding">
+                        <div class="carta padding">
+                            <h2 class="text-green text-center">Programas educativos</h2>
+                            <p>Actividades educativas a grupos de riesgos definidos por las entidades aseguradores en el ámbito familiar, comunitario o empresarial, protección especificada detección temprana y salud mental, además del riesgo ocupacional.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid" id="ventajas">
+            <div class="container">
+                <div class="col-lg-5">
+                    <h1 class="text-center text-green">Consulte las ventajas que AIC tiene para usted</h1>
+                    <p class="text-muted text-justify">Mejor calidad de vida, intimidad y bienestar, asistencia personalizada y más humanizada, oportunidad de recibir educación en salud</p>
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-lg">Ventajas para su familia</button>
+                    </div>
+                    <br><br>
+                    <p class="text-muted">Mejor calidad de vida, intimidad y bienestar, asistencia personalizada y más humanizada, oportunidad de recibir educación en salud.</p>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid" id="ventajas2">
+            <div class="container">
+                <div class="col-lg-5 col-lg-offset-7">
+                    <div class="text-center">
+                        <button class="btn btn-info btn-lg">Ventajas para el asegurador</button>
+                    </div>
+                    <p>
+                        <ul class="text-muted">
+                            <li>Reducción de tasas de reingreso hospitalario mediante la gestión del riesgo en salud.</li>
+                            <li>Retorno del paciente a su médico tratante.</li>
+                            <li>Reducción de costos a través de: Control de la policonsulta y la polimedicación.</li>
+                            <li>Adecuación de planes de tratamiento acorde a las necesidades del paciente con criterios de pertinencia médica y pertinencia administrativa.</li>
+                            <li>Garantía de seguimiento e intervención oportuna mediante sesiones rutinarias por el equipo multidisciplinario para la revisión de los planes de manejo con enfoque integral (biopsicosocial).</li>
+                            <li>Generación de informes bimensuales del estado de salud y grado de rehabilitación ó readaptación del paciente crónico historia clínica sistematizada.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2 class="text-primary text-center">Contáctanos</h2>
+                <div class="col-md-6 col-md-offset-3">
+                    <form action="enviar.php">
+                        <input type="text" class="form-control" placeholder="Nombre" required name="nombre"><br>
+                        <input type="text" class="form-control" placeholder="Correo" required name="correo"><br>
+                        <textarea cols="30" rows="10" class="form-control" placeholder="Mensaje" required name="mensaje"></textarea><br>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            servicioalcliente@atencionintegralencasa.org<br>
+            Cel: 3183121519 · Fijo: 2855726<br>
+            Calle 36 # 45 - 44 / Barrio: Santa Ana<br>
+            Palmira - Colombia<br>
+            <a href="revista/" target="_blank">Portafolio / Revista</a><br>
+            <a href="pdf/estados_financieros_2018.pdf" target="_blank">Superintendencia</a><br>
+            <a href="http://aic.managerclinic.com.co" target="_blank">Acceso a Manager Clinic</a>                
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+            $(function(){
+                $('.scroll[href*=#]:not([href=#])').click(function(){
+                    if(location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname){
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                        if(target.length){
+                            $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                        }
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

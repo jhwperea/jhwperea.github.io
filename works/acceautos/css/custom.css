@@ -1,0 +1,335 @@
+.m-xs{margin:10px;}
+.m-sm{margin:20px;}
+.m-md{margin:30px;}
+.m-lg{margin:40px;}
+.m-xl{margin:50px;}
+.mt-xs{margin-top:10px;}
+.mt-sm{margin-top:20px;}
+.mt-md{margin-top:30px;}
+.mt-lg{margin-top:40px;}
+.mt-xl{margin-top:50px;}
+.mb-xs{margin-bottom:10px;}
+.mb-sm{margin-bottom:20px;}
+.mb-md{margin-bottom:30px;}
+.mb-lg{margin-bottom:40px;}
+.mb-xl{margin-bottom:50px;}
+.p-xs{padding:10px;}
+.p-sm{padding:20px;}
+.p-md{padding:30px;}
+.p-lg{padding:40px;}
+.p-xl{padding:50px;}
+.pt-xs{padding-top:10px;}
+.pt-sm{padding-top:20px;}
+.pt-md{padding-top:30px;}
+.pt-lg{padding-top:40px;}
+.pt-xl{padding-top:50px;}
+.pb-xs{padding-bottom:10px;}
+.pb-sm{padding-bottom:20px;}
+.pb-md{padding-bottom:30px;}
+.pb-lg{padding-bottom:40px;}
+.pb-xl{padding-bottom:50px;}
+.img-marcas{padding:0 20px 0 20px;}
+.img-principal{width:90%;margin:0 auto;}
+.img-center{text-align:center;margin:0 auto;display:block;}
+.txt-center{text-align:center;}
+.footer-title{color:#dfdfdf;text-transform:uppercase;}
+.titulo-news{width:100%;padding-left:10%;}
+.accordion-style{padding:10px;font-weight:bolder;width:100%;border-radius:0px 35px 35px 35px;-moz-border-radius:0px 35px 35px 35px;-webkit-border-radius:0px 35px 35px 35px;border:2px solid rgba(0,0,0,0.1);background:-moz-linear-gradient(top, rgba(171,212,5,0.5) 0%, rgba(171,212,5,0.5) 34%, rgba(171,212,5,0.29) 62%, rgba(125,185,232,0) 100%);background:-webkit-linear-gradient(top, rgba(171,212,5,0.5) 0%,rgba(171,212,5,0.5) 34%,rgba(171,212,5,0.29) 62%,rgba(125,185,232,0) 100%);background:linear-gradient(to bottom, rgba(171,212,5,0.5) 0%,rgba(171,212,5,0.5) 34%,rgba(171,212,5,0.29) 62%,rgba(125,185,232,0) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80abd405', endColorstr='#007db9e8',GradientType=0);}
+#clock{display:block;margin:0 auto;width:640px;}
+.nov-img{width:33.333%;display:inline-block;}
+.nov-img-2{width:32%;display:inline-block;}
+.catalgo .owl-item{float:none !important;width:100% !important;}
+.catalgo .owl-wrapper-outer .owl-wrapper{width:100% !important;}
+.accordion .accordion-style .accordion-inner{color:#000000;padding-left:15px;padding:5px;}
+.img-catalogo{display:block !important;width:100px !important;margin-left:20px;}
+.span-catalogo{margin-left:20px;font-size:25px;}
+#accordion .accordion-group div div a{text-decoration:none;color:#000000;font-weight:normal;margin:5px}
+#accordion .accordion-group div div a:hover{color:#164193;font-weight:bold;}
+.slider-index{width:1170px;margin:auto;}
+@media (max-width:1180px){.slider-index{width:100%;}
+}
+.prev_button{display:block !important;position:absolute;left:0px;background-color:rgba(0, 0, 0, 0.3);padding:13px 13px 10px 10px}
+.next_button{display:block !important;position:absolute;right:0px;background-color:rgba(0, 0, 0, 0.3);padding:13px 10px 10px 13px}
+.prev_button:hover , .next_button:hover{background-color:rgba(0, 0, 0, 1);}
+.button-display{margin-top:-160px !important;}
+.modal-lg{width:80%;}
+.modal-body{padding:5px;}
+#MyModal img{border-radius:10px;}
+#tripleta-btn a img:hover{background-image:url(../tripletaganadora/img/boton-tripleta.png);}
+#bg-tripleta{background-image:url(../tripletaganadora/img/TEXTURA%20GRIS.jpg);background-size:1170px;background-position:center top;background-attachment:fixed;}
+#bg-tripleta2{background-image:url(../tripletaganadora/img/TEXTURA%20GRIS.jpg);background-size:1170px;background-position:center top;background-attachment:fixed;}
+#bg-tripleta2, #bg-tripleta2 > div{padding:0px;}
+.btn-atras{width:10%;position:absolute;right:40px;top:20px;}
+.btn-atras2{float:right;width:20%;margin:10px 20px 20px 0px;}
+.center{display:block;text-align:center;margin:auto;}
+.tr1-btn-menu1{width:44%;display:block;float:left;margin:-25px 5px 0 0px;}
+.tr1-btn-menu2{width:44%;display:block;float:right;margin:-25px 0px 0 5px;}
+.tr2-btn-menu1{width:31%;display:block;float:left;margin:80px 0px 0 0px;z-index:1;}
+.tr2-btn-menu2{width:80%;display:block;float:right;margin:70px 0px 0 0px;z-index:1;}
+#tripleta-menu{background-image:url(../tripletaganadora/img/TEXTURA%20VERDE.jpg);background-size:100%;height:250px;background-position:center;margin:20% 0 0 0;z-index:0;}
+#logo-tripleta img{width:35%;display:block;margin:auto;position:absolute;margin-left:31%;margin-top:20px;z-index:0;}
+.logo-ic img{width:70%;margin-top:100px;margin-bottom:10px;}
+#clock{width:100%;text-align:center;padding:15px 0px;background:rgba(22,65,147,1);background:-moz-linear-gradient(top, rgba(22,65,147,1) 0%, rgba(22,65,147,1) 38%, rgba(32,124,229,1) 90%, rgba(32,124,229,1) 100%);background:-webkit-gradient(left top, left bottom, color-stop(0%, rgba(22,65,147,1)), color-stop(38%, rgba(22,65,147,1)), color-stop(90%, rgba(32,124,229,1)), color-stop(100%, rgba(32,124,229,1)));background:-webkit-linear-gradient(top, rgba(22,65,147,1) 0%, rgba(22,65,147,1) 38%, rgba(32,124,229,1) 90%, rgba(32,124,229,1) 100%);background:-o-linear-gradient(top, rgba(22,65,147,1) 0%, rgba(22,65,147,1) 38%, rgba(32,124,229,1) 90%, rgba(32,124,229,1) 100%);background:-ms-linear-gradient(top, rgba(22,65,147,1) 0%, rgba(22,65,147,1) 38%, rgba(32,124,229,1) 90%, rgba(32,124,229,1) 100%);background:linear-gradient(to bottom, rgba(22,65,147,1) 0%, rgba(22,65,147,1) 38%, rgba(32,124,229,1) 90%, rgba(32,124,229,1) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#164193', endColorstr='#207ce5', GradientType=0);}
+#clock div{display:inline-block;}
+#clock div div{font-size:35px;font-weight:800;width:auto;display:block;text-align:center;border:1px solid black;border-radius:5px;margin:0px 2px;padding:0px 3px;color:white;background:rgba(66,66,66,1);background:-moz-linear-gradient(top, rgba(66,66,66,1) 0%, rgba(71,71,71,1) 9%, rgba(92,92,92,1) 24%, rgba(87,87,87,1) 40%, rgba(48,48,48,1) 49%, rgba(38,38,38,1) 50%, rgba(71,71,71,1) 61%, rgba(102,102,102,1) 75%, rgba(89,89,89,1) 88%, rgba(76,76,76,1) 100%);background:-webkit-gradient(left top, left bottom, color-stop(0%, rgba(66,66,66,1)), color-stop(9%, rgba(71,71,71,1)), color-stop(24%, rgba(92,92,92,1)), color-stop(40%, rgba(87,87,87,1)), color-stop(49%, rgba(48,48,48,1)), color-stop(50%, rgba(38,38,38,1)), color-stop(61%, rgba(71,71,71,1)), color-stop(75%, rgba(102,102,102,1)), color-stop(88%, rgba(89,89,89,1)), color-stop(100%, rgba(76,76,76,1)));background:-webkit-linear-gradient(top, rgba(66,66,66,1) 0%, rgba(71,71,71,1) 9%, rgba(92,92,92,1) 24%, rgba(87,87,87,1) 40%, rgba(48,48,48,1) 49%, rgba(38,38,38,1) 50%, rgba(71,71,71,1) 61%, rgba(102,102,102,1) 75%, rgba(89,89,89,1) 88%, rgba(76,76,76,1) 100%);background:-o-linear-gradient(top, rgba(66,66,66,1) 0%, rgba(71,71,71,1) 9%, rgba(92,92,92,1) 24%, rgba(87,87,87,1) 40%, rgba(48,48,48,1) 49%, rgba(38,38,38,1) 50%, rgba(71,71,71,1) 61%, rgba(102,102,102,1) 75%, rgba(89,89,89,1) 88%, rgba(76,76,76,1) 100%);background:-ms-linear-gradient(top, rgba(66,66,66,1) 0%, rgba(71,71,71,1) 9%, rgba(92,92,92,1) 24%, rgba(87,87,87,1) 40%, rgba(48,48,48,1) 49%, rgba(38,38,38,1) 50%, rgba(71,71,71,1) 61%, rgba(102,102,102,1) 75%, rgba(89,89,89,1) 88%, rgba(76,76,76,1) 100%);background:linear-gradient(to bottom, rgba(66,66,66,1) 0%, rgba(71,71,71,1) 9%, rgba(92,92,92,1) 24%, rgba(87,87,87,1) 40%, rgba(48,48,48,1) 49%, rgba(38,38,38,1) 50%, rgba(71,71,71,1) 61%, rgba(102,102,102,1) 75%, rgba(89,89,89,1) 88%, rgba(76,76,76,1) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#424242', endColorstr='#4c4c4c', GradientType=0);}
+#clock div spam{font-size:14px;font-weight:500;color:white;width:auto;text-align:center;border-radius:5px;line-height:0;margin:5px;}
+#up-clock{float:right;display:block;margin:20px -30px 10px 0px;}
+#up-clock h2{text-align:center;color:white;font-weight:900;line-height:25px;}
+.terms-conds p{margin-top:100px;color:white;font-weight:900;font-size:15px;text-align:center;}
+#tripleta-sec, #tripleta-sec > div{padding:0px;}
+#tripleta-sec .tripleta-sec-right{background-color:rgb(150,232,0);background-size:100%;}
+#tripleta-img{height:100%;}
+#tripleta-img div{background-image:url(../tripletaganadora/img/Fondo%20New.jpg);background-size:100%;background-position:center;height:750px;}
+#tripleta-img2{height:100%;}
+#tripleta-img2 div{background-image:url(../tripletaganadora/img/Foto%20Ciclistas.png);background-size:auto;background-position:center;height:578px;}
+#tripleta-cont{margin:30px 20px 10px 20px;border:2px solid #fff;}
+#tripleta-cont p{padding:10px;color:#164193;font-weight:bold;height:477px;overflow-y:scroll;}
+#tripleta-cont p b{font-weight:900;}
+#tripleta-cont img{width:35%;margin-top:-30px;}
+#tripleta-cont2{margin:30px 20px 10px 20px;border:2px solid #fff;}
+#tripleta-cont2 p{padding:10px;color:#164193;font-weight:bold;height:300px;overflow-y:scroll;}
+#tripleta-cont2 p b{font-weight:900;}
+#tripleta-cont2 img{width:35%;margin-top:-40px;}
+#tripleta-cont3{margin:30px 20px 10px 20px;border:2px solid #fff;}
+#tripleta-cont3 p{padding:10px;color:#164193;font-weight:bold;height:472px;overflow-y:scroll;}
+#tripleta-cont3 p b{font-weight:900;}
+#tripleta-cont3 img{width:35%;margin-top:-30px;}
+#tripleta-cont4{margin:30px 20px 10px 20px;border:2px solid #fff;}
+#tripleta-cont4 p{padding:10px;color:#164193;font-weight:bold;height:184px;overflow-y:scroll;}
+#tripleta-cont4 p b{font-weight:900;}
+#tripleta-cont4 img{width:35%;margin-top:-40px;}
+#tripleta-cont4-2{margin:30px 20px 10px 20px;border:2px solid #fff;}
+#tripleta-cont4-2 p{padding:10px;color:#164193;font-weight:bold;height:134px;}
+#tripleta-2cont{margin:30px 20px 10px 20px;border:2px solid #fff;background-color:#164193;}
+#tripleta-2cont p{padding:10px;color:#fff;height:240px;overflow-y:scroll;}
+#tripleta-2cont p b{font-weight:900;}
+#tripleta-2cont img{width:35%;margin-top:-30px;}
+#tripleta-2cont2{margin:30px 20px 10px 20px;border:2px solid #fff;background-color:#164193;}
+#tripleta-2cont2 p{padding:10px;color:#fff;height:210px;overflow-y:scroll;}
+#tripleta-2cont2 p b{font-weight:900;}
+#tripleta-2cont2 img{width:35%;margin-top:-30px;}
+#tripleta-2cont3{margin:30px 20px 10px 20px;border:2px solid #fff;background-color:#164193;}
+#tripleta-2cont3 p{padding:10px;color:#fff;height:305px;overflow-y:scroll;}
+#tripleta-2cont3 p b{font-weight:900;}
+#tripleta-2cont3 img{width:35%;margin-top:-30px;}
+#img-mec-pre img{margin-top:-35px;}
+.txt-icono{padding:10px;width:100%;}
+.tripleta-sec-right-img{margin:20px;}
+#img-asi-vamos{height:20px;text-align:center;}
+#img-asi-vamos img{height:110px;margin-top:-30px;}
+.boton-left{height:100%;padding:0px;}
+.boton-left img{width:100%;}
+#inst-gano-img img{width:80%;display:block;margin:auto;margin-bottom:-100px;}
+#inst-gano-img div{width:100%;}
+#vendedor-img img{width:76%;display:block;margin:auto;margin-top:-20px;margin-bottom:-160px;}
+#vendedor-img div{width:100%;}
+#distribuido-img img{width:80%;display:block;margin:auto;margin-bottom:-50px;}
+#distribuido-img div{width:100%;}
+.inscribase-img{width:30%;margin:20px auto;}
+#bg-inscribase{background-color:rgb(150,232,0);}
+#bg-inscribase img{width:100%;}
+#bg-inscribase form{margin-top:50px;}
+#bg-inscribase form label{text-transform:uppercase;font-size:20px;color:#164193;line-height:1;}
+#btn-enviar{width:100px;float:right;margin:50px;}
+@media (max-width:750px){#tripleta-menu{height:150px;}
+    #logo-tripleta img{width:25%;margin-left:36%;margin-top:55px;}
+    .tr1-btn-menu1{width:40%;margin:-5px 0px 0 5px;}
+    .tr1-btn-menu2{width:40%;margin:-5px 0px 0 5px;}
+    .tr2-btn-menu1{margin:40px 0px 0 0px;}
+    .tr2-btn-menu2{margin:30px 0px 0 0px;}
+    .tripleta-sec-right-img{padding-right:35px;}
+    .inscribase-img{width:40%;}
+}
+@media (min-width:750px) and (max-width:902px){#tripleta-menu{height:175px!important;}
+}
+@media (min-width:750px) and (max-width:992px){#tripleta-menu{height:150px;}
+    #logo-tripleta img{width:25%;margin-left:36%;margin-top:55px;}
+    .tr1-btn-menu1{margin:-15px 0px 0 5px;}
+    .tr1-btn-menu2{margin:-15px 0px 0 5px;}
+    .tr2-btn-menu1{margin:40px 0px 0 0px;}
+    .tr2-btn-menu2{margin:30px 0px 0 0px;}
+    .inscribase-img{width:40%;}
+}
+@media (min-width:992px) and (max-width:1200px){#tripleta-menu{height:250px;}
+    .tr2-btn-menu1{width:33%;margin:110px 0px 0 0px;}
+    .tr2-btn-menu2{margin:70px 0px 0 0px;}
+    #up-clock h2{font-size:20px;}
+    #tripleta-cont p{height:491px;}
+    #tripleta-cont2 p{height:343px;}
+    #tripleta-cont3 p{height:386px;}
+    #tripleta-cont4 p{height:186px;}
+    #tripleta-2cont p{height:190px;}
+    #tripleta-2cont2 p{height:155px;}
+    #tripleta-2cont3 p{height:224px;}
+    #tripleta-img2 div{height:608px;}
+}
+@media (max-width:992px){#foot-tripleta{text-align:center;}
+    #up-clock{float:none;padding-top:35px;}
+    .logo-ic img{width:100%;margin-top:10px;margin-bottom:0px;}
+    .terms-conds p{margin-top:20px;color:white;font-weight:900;font-size:15px;text-align:center;}
+    #inst-gano-img img{margin-bottom:0px;}
+    #bg-inscribase img{display:none;}
+    #bg-tripleta{background-size:100%;}
+    #bg-tripleta2{background-size:100%;}
+}
+#capacitaciones{text-align:center;}
+#capacitaciones a{cursor:pointer;}
+#capacitaciones p{text-align:center;font-weight:700;height:50px;color:black;}
+#capacitaciones img{width:100%;display:block;margin:5px auto;}
+.capacDiv{display:inline-block;margin:8px;width:265px;border:1px dashed #5a5a5a;border-radius:15px;}
+@media (max-width:1200px){.capacDiv{height:350px;width:285px;}
+}
+#img-popup{width:100%;display:block;margin:auto;}
+#EquipoOriginal{background-image:url(../nuestroequipodenso/img/fondo.jpg);background-size:100%;background-position:top center;}
+#EquipoOriginal.bg2{background-image:url(../nuestroequipodenso/img/fondo2.jpg);background-size:100%;background-position:top center;}
+#EquipoOriginal-btn{}
+#EquipoOriginal spam{color:#fff;font-size:25px;font-style:italic;font-stretch:ultra-condensed;line-height:30px;}
+#EquipoOriginal ul{color:#fff;font-size:20px;font-style:italic;font-stretch:ultra-condensed;line-height:30px;list-style:decimal;list-style-position:inside;}
+#EquipoOriginal-btn img{width:100%;}
+#Registro-EquipoOriginal label, #Cliente-EquipoOriginal label{float:right;font-size:20px;text-transform:capitalize;}
+#EquipoOriginal .Denso-logo{margin-top:30px;}
+#EquipoOriginal .titular-img{margin-top:30px;}
+.index-inscribase{background-image:url(../nuestroequipodenso/img/linea_punteada.png);background-position:top center;background-repeat:no-repeat;background-size:87%;}
+@media (min-width:667px){.index-inscribase .row:first-child{margin-top:50px;}
+    .index-inscribase .row{margin-top:10px;}
+    .index-inscribase .row:last-child{margin-bottom:100px;}
+}
+@media (max-width:667px){.index-inscribase .row:first-child{margin-top:20px;}
+    .index-inscribase .row:last-child{margin-bottom:60px;}
+    #EquipoOriginal spam{font-size:1em;line-height:10px;}
+    #EquipoOriginal ul{font-size:1em;line-height:10px;}
+}
+@media (max-width:1200px){.index-inscribase .row img{width:40%;}
+}
+.index-logos img{height:50px;width:auto;}
+.index-inscribase .btn{width:335px;}
+@media (max-width:902px){.index-inscribase .btn{width:35%;}
+}
+#dt-form h1,#dt-form h2,#dt-form h3{text-transform:uppercase;}
+#EquipoOriginal h1,#EquipoOriginal h2,#EquipoOriginal h3,#EquipoOriginal h4{color:#fff;}
+#dt-form .politica-datos{color:#fff;font-size:20px;text-align:center;padding:10px;}
+#dt-form .politica-datos input{width:20px;height:20px;vertical-align:-3px;margin:5px;}
+.politica-datos a{color:#fff;font-weight:bold;text-transform:capitalize;}
+.politica-datos a:hover{text-decoration:underline;color:#4b0404;}
+#inscrito{padding:0px;}
+#inscrito img{width:100%;}
+.exportar{display:block;float:right;margin:25px;}
+.modal-body ul{list-style:disc;list-style-position:inside;}
+.btn-Pagos img{margin-top:28px;margin-left:140px;}
+@media (max-width:992px){.btn-Pagos img{margin-left:40px;}
+}
+@media (max-width:902px){.btn-Pagos img{margin:auto;margin-top:-20px;margin-bottom:15px;display:block;}
+}
+
+.novedades-motos-container .filters-list a:first-child {
+    padding-top: 35px;
+    padding-left: 0px;
+    color:  #000;
+    text-align: center;
+}
+.novedades-motos-container .filter {
+    width: 110px;
+    height: 120px;
+    padding: 0px 0px 0px 5px;
+    background-color: #fff;
+    border-bottom: 1px solid #424242;
+    border-top: 1px solid #424242;
+}
+@media (max-width:1200px){
+    .novedades-motos-container .filter {
+        width: 90px;
+    }
+}
+
+.logo-catalogo {
+    margin-top: 15px;
+}
+
+.logo-catalogo .filters-list .filter {
+    background-color: #FFF;
+    border: 1px solid #626262;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 1px;
+}
+
+.logo-catalogo .filters-list .filter img {
+    width: 100px;
+}
+
+.txt-catalogo i {
+    font-weight: bold;
+}
+
+.txt-catalogo {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.txt-catalogo a:hover {
+    font-size: 18.5px;
+}
+
+.novedades-container {
+    display: inline-block;
+    float: none;
+}
+
+.novedades-container .filter {
+    padding: 1px;
+    margin: 5px;
+    border: none;
+}
+
+.novedades-container .filter:hover {
+    background-color: #717171;
+}
+
+.filters-list .filter:first-child {
+    width: 100px;
+    height: 100px;
+}
+
+.filters-list .filter .todas-novedades {
+    position: absolute;
+    padding-top: 25px;
+    padding-left: 15px;
+}
+
+.novedades-container .filter img {
+    border: 1px solid #717171;
+}
+
+.quienes-somos {
+    font-size: 2rem;
+}
+
+.quienes-somos h3 {
+    font-size: 3rem;
+}
+
+#header-wrap .site-brand .navbar-brand img{
+    max-height: 120px;
+    margin-left: 40px;
+}
+
+.icon2-container {
+    text-align: center;
+    height: 110px;
+}
+
+.icon-center img {
+    height: 250px;
+}
+
+#whatsapp{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: green;
+    padding: .1em 1em;
+    border-radius: 15px 0 0 0
+}
+#whatsapp a{
+    color: white
+}

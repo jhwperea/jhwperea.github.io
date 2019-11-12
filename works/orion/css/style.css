@@ -1,0 +1,239 @@
+@font-face{
+	font-family:'MC';
+	src:url(../fonts/MYRIADPRO-COND.OTF)
+}
+@font-face{
+	font-family:'MCIT';
+	src:url(../fonts/MYRIADPRO-CONDIT.OTF)
+}
+@font-face{
+	font-family:'MBC';
+	src:url(../fonts/MYRIADPRO-BOLDCOND.OTF)
+}
+@font-face{
+	font-family:'MBCIT';
+	src:url(../fonts/MYRIADPRO-BOLDCONDIT.OTF)
+}
+@font-face{
+	font-family:'HelveticaNeue';
+	src:url(../fonts/HelveticaNeue.otf)
+}
+@font-face{
+	font-family: 'BlueprintExtended';
+	src:url(../fonts/BlueprintExtended.ttf);
+}
+.blueprint{
+	font-family: 'BlueprintExtended'
+}
+.myriad-condensed{
+	font-family:'MC'
+}
+.myriad-condensed-italic{
+	font-family:'MCIT'
+}
+.myriad-bold-condensed{
+	font-family:'MBC'
+}
+.myriad-bold-condensed-italic{
+	font-family:'MBCIT'
+}
+body{
+	font-family:'MC'
+}
+.helvetica{
+	font-family: 'HelveticaNeue';
+	font-weight: 800;
+}
+.h1{
+	font-family: 'MBC';
+	font-size: 250%;
+}
+.h2{
+	font-size: 400%;
+}
+.h3{
+	font-family: 'HelveticaNeue';
+	font-size: 200%;
+}
+.h4{
+	font-size: 200%;
+}
+.h5, input, textarea{
+	font-size: 150%;
+}
+.h6{
+	font-size: 100%;
+}
+.text-orange{
+	color: rgba(236, 102, 7, 1);
+}
+.bg-orange{
+	background-color: rgba(236, 102, 7, 1);
+}
+.bg-orangeop{
+	background-color: rgba(236, 102, 7, .8);
+}
+.bar{ 
+	padding: .2em;
+	margin: 0;
+}
+.bg-white{
+	background-color: white;
+}
+.agencia{
+	position: absolute;
+	top: 8%;
+	width: 15%;
+	right: 30%;
+}
+.esquina{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 10%;
+}
+.text-white{
+	color: white;
+}
+.bg-gray{
+	background-color: rgba(236, 236, 236, 1);
+}
+.text-gray{
+	color: rgba(0, 0, 0, 0.5);
+}
+.bg-blue{
+	background-color: rgba(9, 145, 178, 1);
+}
+.text-blue{
+	color: rgba(9, 145, 178, 1);
+}
+.text-lila{
+	color: rgba(149, 27, 129, 1);
+}
+.bordered{
+	border: solid 1px black;
+}
+.navbar{
+	border: 0;
+	margin: 0; 
+	background-color: rgba(255, 255, 255, .95);
+	box-shadow: 0 0 10px;
+}
+ul.nav li a{
+	font-family: 'HelveticaNeue';
+	font-weight: 800;
+	margin-top: 1em;
+	font-size: 150%;
+	color: rgba(0,0,0,0.5);
+	border-right: solid 1px rgba(236, 102, 7, 1);
+	border-left: 0;
+	border-top: 0;
+	border-bottom: 0;
+	border-style: dotted;
+}
+ul.nav li a:hover{
+	color: rgba(236, 102, 7, 1);
+	background-color: transparent
+}
+#menu1{
+	vertical-align: middle;
+	float: right;
+}
+.jumbotron{
+	background-color: transparent;
+	color: rgba(236, 102, 7, 1)
+}
+.shadow{
+	position: relative;
+	z-index: 99;
+	box-shadow: 0 0 10px
+}
+#parallax1{
+	background-image: url(img/home.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+}
+#parallax-astro{
+	background-image: url(img/hombre.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: auto;
+}
+@media (max-width: 786px){
+	#parallax1{
+		background-image: url(img/home1.png);
+		background-size: cover;
+	}
+}
+#parallax2{
+	background-image: url(img/contacto.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: auto;
+}
+.padding{
+	padding: 1%;
+}
+.padding2{
+	padding: 5%;
+}
+.margin{
+	margin: 1%;
+}
+.margin-top{
+	margin-top: 8%;
+}
+.full{
+	width: 100%;
+}
+.separador{
+	width: 8%;
+	margin: 0 46%;
+}
+input, textarea{
+	background-color: rgba(230, 230, 255, 1);
+	border-radius: 5px;
+	margin: 2% 0;
+	padding: 2%;
+	width: 100%;
+	border: 0;
+}
+textarea{
+	height: 5em;
+}
+.creativo{
+	margin-bottom: -8em;
+	padding: 0;
+}
+@media (max-width: 768px){
+	#menu1{
+		float: left;
+	}
+	.separador{
+		width: 20%;
+		margin: 0 40%;
+	}
+	ul.nav li a{
+		border: 0;
+		width: 100%;
+		margin: auto;
+	}
+}
+@media (min-width: 1800px){
+	.logo{
+		width: 28%;
+	}
+	ul.nav li a{
+		font-family: 'HelveticaNeue';
+		margin-top: 2em;
+		font-size: 180%;
+		color: rgba(0,0,0,0.5)
+	}
+	.separador{
+		margin-top: -5px;
+	}
+}
