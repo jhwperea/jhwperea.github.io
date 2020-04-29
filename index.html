@@ -1,191 +1,193 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="utf-8">
-	<title>Jhonier Alejandro Perea Derazo</title>
-	<meta name="Author" content="Jhonier Alejandro Perea Derazo, Jhwperea">
-	<link rel="icon" href="assets/img/icon.png">
-	<meta http-equiv='X-UA-Compatible' content='IE=Edge'>
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="mobile-web-app-status-bar-style" content="black">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee|Play">
-	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
-	<style>
-		::-webkit-scrollbar{ width: 8px }
-		::-webkit-scrollbar-track{ background-color: rgba(0, 0, 0, .1) }
-		::-webkit-scrollbar-thumb{ background-color: rgba(0, 0, 0, .5) }
-		::-webkit-scrollbar-thumb:hover{ background-color: rgba(0, 0, 0, .8) }
-		body *{ font-family: 'Play',sans-serif }
-		.bungee{ font-family: 'Bungee',cursive }
-		.wide{ width: 100%; padding: 0 }
-		.padding{ padding: 2.5% 5% }
-		.rounded{ border-radius: 10px }
-		p{ font-size: 1.5em; color: gray }
-		.text-center{ text-align: center !important }
-		.text-justify{ text-align: justify !important }
-		.text-right{ text-align: right !important }
-		.text-shadow{ text-shadow: 1px 1px 10px black }
-		a,a:hover{ text-decoration: none; cursor: pointer; color: gray !important }
-		.mdl-layout__header{ display: block !important }
-		.mdl-layout__drawer{ border: 0px }
-		.mdl-layout__drawer-button{ color: black; -webkit-text-stroke: 1px black }
-		.wide{ max-width: 100%; min-width: 100%; width: 100% !important }
-		.pull-right{ float: right }
-		.mdl-color--primary{ background: steelblue !important }
-		.circle{ border-radius: 50% }
-		.avatar{ width: 50px }
-		input, textarea{ width: 95%; margin: 0 2.5%; padding: 1em; border-radius: 5px; border: 0 }
-		#me{
-			background-image: url('assets/img/bg.png');
-			background-position: bottom;
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-			margin: 0; padding: 0
-		}
-		#me-content{ background-color: rgba(0, 0, 0, .5); margin: 0; padding: 15% 5% }
-		#trabajos{ background-image: url('assets/img/bg.jpg'); margin: 0; padding: 0 }
-		#trabajos-content{ background-color: rgba(0, 0, 0, .5); margin: 0; padding: 1em 5em }
-		@media(max-width: 1024px){ ::-webkit-scrollbar{ width: 0px } }
-	</style>
-</head>
-<body>
-	<article class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
-		<aside class="mdl-layout__drawer mdl-shadow--8dp mdl-color--grey-100">
-			<img src="https://avatars3.githubusercontent.com/u/23360285?s=460&v=4" class="wide">
-			<nav class="mdl-navigation">
-				<a class="mdl-navigation__link" href="#habilidades">
-					<i class="material-icons mdl-color-text--primary">lightbulb_outline</i>&nbsp; <strong>Skills</strong>
-				</a>
-				<a class="mdl-navigation__link" href="#trabajos">
-					<i class="material-icons mdl-color-text--primary">code</i>&nbsp; <strong>Works</strong>
-				</a>
-				<a class="mdl-navigation__link" href="#templates">
-					<i class="material-icons mdl-color-text--primary">view_quilt</i>&nbsp; <strong>Templates</strong>
-				</a>
-				<a class="mdl-navigation__link" href="mailto:jhwperea@gmail.com">
-					<i class="material-icons mdl-color-text--primary">mail_outline</i>&nbsp; <strong>Email</strong>
-				</a>
-				<a class="mdl-navigation__link" href="https://wa.me/573013127037" target="_blank">
-					<i class="fa fa-whatsapp mdl-color-text--primary" style="font-weight: 800; font-size: 150%"></i>&nbsp;&nbsp; <strong>Whatsapp</strong>
-				</a>
-			</nav>
-		</aside>
-		<main class="mdl-layout__content" id="app">
-			<section class="mdl-grid" id="me">
-				<div class="mdl-cell text-center wide" id="me-content">
-					<h4 class="bungee text-center mdl-color-text--white text-shadow" style="font-size: 300%">Jhonier Alejandro Perea Derazo</h4>
-					<p class="mdl-color-text--white text-shadow">Software Developer / Web Designer</p>
-				</div>
-			</section>
-			<section class="mdl-grid padding mdl-shadow--8dp" id="habilidades">
-				<div class="mdl-cell text-center wide">
-					<h4 class="bungee text-center">Skills</h4>
-				</div>
-				<article v-for="skill in skills" class="mdl-cell mdl-cell--1-col-phone mdl-cell--2-col-tablet mdl-cell--1-col-desktop">
-					<img :src="'assets/img/skills/'+skill.src+'.png'" class="wide">
-				</article>
-			</section>
-			<section class="mdl-grid padding" id="trabajos">
-				<div class="mdl-cell text-center wide" id="trabajos-content">
-					<div class="mdl-grid">
-						<div class="mdl-cell text-center wide">
-							<h4 class="bungee mdl-color-text--white text-shadow">Works</h4>
-						</div>
-						<article v-for="(value, key) in works" class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-color--white mdl-shadow--4dp rounded">
-							<a :href="value.url" target="_blank">
-								<img :src="'assets/img/works/'+value.src+'.png'" class="wide">
-								<h5 class="mdl-color-text--primary text-center" v-text="value.name"></h5>
-							</a>
-						</article>
+	<head>
+		<meta charset="utf-8">
+		<title>Jhonier Alejandro Perea Derazo</title>
+		<meta name="Author" content="Jhonier Alejandro Perea Derazo, Jhwperea">
+		<link rel="icon" href="assets/img/icon.png">
+		<meta http-equiv='X-UA-Compatible' content='IE=Edge'>
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee|Play">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
+		<style>
+			::-webkit-scrollbar{ width: 8px }
+			::-webkit-scrollbar-track{ background-color: rgba(0, 0, 0, .1) }
+			::-webkit-scrollbar-thumb{ background-color: rgba(0, 0, 0, .5) }
+			::-webkit-scrollbar-thumb:hover{ background-color: rgba(0, 0, 0, .8) }
+			body *{ font-family: 'Play',sans-serif }
+			.bungee{ font-family: 'Bungee',cursive }
+			.wide{ width: 100%; padding: 0 }
+			.padding{ padding: 2.5% 5% }
+			.rounded{ border-radius: 10px }
+			p{ font-size: 1.5em; color: gray }
+			.text-center{ text-align: center !important }
+			.text-justify{ text-align: justify !important }
+			.text-right{ text-align: right !important }
+			.text-shadow{ text-shadow: 1px 1px 10px black }
+			a,a:hover{ text-decoration: none; cursor: pointer; color: gray !important }
+			.mdl-layout__header{ display: block !important }
+			.mdl-layout__drawer{ border: 0px }
+			.mdl-layout__drawer-button{ color: black; -webkit-text-stroke: 1px black }
+			.wide{ max-width: 100%; min-width: 100%; width: 100% !important }
+			.pull-right{ float: right }
+			.mdl-color--primary{ background: steelblue !important }
+			.circle{ border-radius: 50% }
+			.avatar{ width: 50px }
+			input, textarea{ width: 95%; margin: 0 2.5%; padding: 1em; border-radius: 5px; border: 0 }
+			#me{
+				background-image: url('assets/img/bg.png');
+				background-position: bottom;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				margin: 0; padding: 0
+			}
+			#me-content{ background-color: rgba(0, 0, 0, .5); margin: 0; padding: 15% 5% }
+			#trabajos{ background-image: url('assets/img/bg.jpg'); margin: 0; padding: 0 }
+			#trabajos-content{ background-color: rgba(0, 0, 0, .5); margin: 0; padding: 1em 5em }
+			@media(max-width: 1024px){ ::-webkit-scrollbar{ width: 0px } }
+		</style>
+	</head>
+	<body>
+		<article class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+			<aside class="mdl-layout__drawer mdl-shadow--8dp mdl-color--grey-100">
+				<img src="https://avatars3.githubusercontent.com/u/23360285?s=460&v=4" class="wide">
+				<nav class="mdl-navigation">
+					<a class="mdl-navigation__link" href="#habilidades"><i class="material-icons mdl-color-text--primary">lightbulb_outline</i>&nbsp; <strong>Skills</strong></a>
+					<a class="mdl-navigation__link" href="#trabajos"><i class="material-icons mdl-color-text--primary">code</i>&nbsp; <strong>Works</strong></a>
+					<a class="mdl-navigation__link" href="#templates"><i class="material-icons mdl-color-text--primary">view_quilt</i>&nbsp; <strong>Templates</strong></a>
+					<a class="mdl-navigation__link" href="mailto:jhwperea@gmail.com"><i class="material-icons mdl-color-text--primary">mail_outline</i>&nbsp; <strong>Email</strong></a>
+					<!-- <a class="mdl-navigation__link" href="https://wa.me/573013127037" target="_blank"><i class="fa fa-whatsapp mdl-color-text--primary" style="font-weight: 800; font-size: 150%"></i>&nbsp; <strong>Whatsapp</strong></a> -->
+				</nav>
+			</aside>
+			<main class="mdl-layout__content" id="app">
+				<section class="mdl-grid" id="me">
+					<div class="mdl-cell text-center wide" id="me-content">
+						<h4 class="bungee text-center mdl-color-text--white text-shadow" style="font-size: 300%">Jhonier Alejandro Perea Derazo</h4>
+						<p class="mdl-color-text--white text-shadow">Software Developer / Web Designer</p>
 					</div>
-				</div>
-			</section>
-			<section class="mdl-grid padding" id="templates">
-				<div class="mdl-cell text-center wide">
-					<h4 class="bungee text-center">Templates</h4>
-				</div>
-				<article class="mdl-cell wide">
-					<a
-						v-for="template in templates"
-						:href="template.url"
-						class="bungee mdl-button mdl-js-button mdl-button--primary mdl-color-text--primary"
-						v-text="template.name"
-						style="margin: 5px"
-					></a>
-				</article>
-			</section>
-		</main>
-	</article>
-	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-	<script>
-		app = new Vue({
-			el:'#app',
-			data:{
-				skills:[
-					{ "description": "Vue JS", "src": "vue" },
-					{ "description": "Material Design", "src": "materialdesign" },
-					{ "description": "Bootstrap 4", "src": "bootstrap" },
-					{ "description": "Cordova", "src": "cordova" },
-					{ "description": "Laravel", "src": "laravel" },
-					{ "description": "WordPress", "src": "wordpress" },
-					{ "description": "Html 5", "src": "html5" },
-					{ "description": "Css 3", "src": "css3" },
-					{ "description": "Javascript", "src": "js" },
-					{ "description": "Php 7", "src": "php7" },
-					{ "description": "MySQL", "src": "mysql" },
-					{ "description": "jQuery", "src": "jquery" }
-				],
-				works:[
-          // Web con rep
-          { "name": "TarjetasGrama", "url": "http://orionpublicidad.com/tarjetasgrama", "src": "tarjetasgrama" },
-          { "name": "Registel", "url": "http://registelcolombia.com", "src": "registel" },
-          { "name": "Difamm Ingeniería", "url": "http://difammingenieria.com", "src": "difamm" },
-          { "name": "Acceautos", "url": "http://acceautos.com.co", "src": "acceautos" },
-          // Web sin rep
-          { "name": "Webmodels", "url": "http://webmodelsacademy.com/app", "src": "webmodelsacademy" },
-          { "name": "CPA Consultoría", "url": "http://cpaconsultoria.com.co", "src": "cpa" },
-	  { "name": "Atencion Integral", "url": "https://orionpublicidad.com/atencionintegralencasa", "src": "aic" },
-          // Local
-          // { "name": "Atencion Integral", "url": "works/atencionintegralencasa/index.html", "src": "aic" },
-          { "name": "Hispanic", "url": "works/hispanic/index.html", "src": "hispanic" },
-          { "name": "Grazzia", "url": "works/grazzia/index.html", "src": "grazzia" },
-          { "name": "Commodities", "url": "works/commodities/index.html", "src": "commodities" },
-          { "name": "Helmbrand", "url": "works/helmbrand/index.html", "src": "helmbrand" },
-          { "name": "Mondragon", "url": "works/mondragon/index.html", "src": "mondragon" },
-          { "name": "Multipolimeros", "url": "works/multipolimeros/index.html", "src": "multipolimeros" },
-          { "name": "Orion", "url": "works/orion/index.html", "src": "orion" },
-          { "name": "Trazo al paso", "url": "works/trazoalpaso/index.html", "src": "trazoalpaso" }
-        ],
-        templates:[
-          { "name": "Agency", "url": "templates/fixed/agency/index.html" },
-          { "name": "Brandy", "url": "templates/fixed/brandy/index.html" },
-          { "name": "Caminar", "url": "templates/fixed/brandy/index.html" },
-          { "name": "Dope 1", "url": "templates/fixed/dope/index.html" },
-          { "name": "Dope 2", "url": "templates/fixed/dope/index2.html" },
-          { "name": "Dope 3", "url": "templates/fixed/dope/index3.html" },
-          { "name": "Spa", "url": "templates/fixed/spa/index.html" },
-          { "name": "Trimcolor", "url": "templates/fixed/trimcolor/index.html" },
-          { "name": "Triscolor", "url": "templates/fixed/triscolor/index.html" },
-          { "name": "Forty", "url": "templates/tofix/forty/index.html" },
-          { "name": "Multiverse", "url": "templates/tofix/multiverse/index.html" },
-          { "name": "Newline", "url": "templates/tofix/newline/index.html" },
-          { "name": "Parsa", "url": "templates/tofix/parsa/index.html" },
-          { "name": "Rapoo", "url": "templates/tofix/rapoo/index.html" },
-          { "name": "Rapoo 2", "url": "templates/tofix/rapoo/index-2.html" },
-          { "name": "Rapoo 3", "url": "templates/tofix/rapoo/index-3.html" },
-          { "name": "Rapoo 4", "url": "templates/tofix/rapoo/index-4.html" },
-          { "name": "Slant", "url": "templates/tofix/slant/index.html" },
-          { "name": "Stylish", "url": "templates/tofix/stylish/index.html" }
-        ]
-      }
-    });
-  </script>
-</body>
+				</section>
+				<section class="mdl-grid padding mdl-shadow--8dp" id="habilidades">
+					<div class="mdl-cell text-center wide">
+						<h4 class="bungee text-center">Skills</h4>
+					</div>
+					<article v-for="skill in skills" class="mdl-cell mdl-cell--1-col-phone mdl-cell--2-col-tablet mdl-cell--1-col-desktop">
+						<img :src="'assets/img/skills/'+skill.src+'.png'" class="wide">
+					</article>
+				</section>
+				<section class="mdl-grid padding" id="trabajos">
+					<div class="mdl-cell text-center wide" id="trabajos-content">
+						<div class="mdl-grid">
+							<div class="mdl-cell text-center wide">
+								<h4 class="bungee mdl-color-text--white text-shadow">Works</h4>
+							</div>
+							<article v-for="(value, key) in works" class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-color--white mdl-shadow--4dp rounded">
+								<a :href="value.url" target="_blank">
+									<img :src="'assets/img/works/'+value.src+'.png'" class="wide">
+									<h5 class="mdl-color-text--primary text-center" v-text="value.name"></h5>
+								</a>
+							</article>
+						</div>
+					</div>
+				</section>
+				<section class="mdl-grid padding" id="templates">
+					<div class="mdl-cell text-center wide">
+						<h4 class="bungee text-center">Templates</h4>
+					</div>
+					<article class="mdl-cell wide">
+						<table class="mdl-data-table mdl-shadow--2dp wide">
+					    <tr v-for="template in templates">
+					      <td v-for="temp in template" class="text-center">
+					      	<a class="bungee mdl-button mdl-js-button mdl-button--primary mdl-color-text--primary" v-text="temp.name" :href="temp.url"></a>
+					      </td>
+					    </tr>
+						</table>
+					</article>
+				</section>
+			</main>
+		</article>
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<script>
+			new Vue({
+				el:'#app',
+				data:{
+					skills:[
+						{ "description": "Vue JS", "src": "vue" },
+						{ "description": "Material Design", "src": "materialdesign" },
+						{ "description": "Bootstrap 4", "src": "bootstrap" },
+						{ "description": "Cordova", "src": "cordova" },
+						{ "description": "Laravel", "src": "laravel" },
+						{ "description": "WordPress", "src": "wordpress" },
+						{ "description": "Html 5", "src": "html5" },
+						{ "description": "Css 3", "src": "css3" },
+						{ "description": "Javascript", "src": "js" },
+						{ "description": "Php 7", "src": "php7" },
+						{ "description": "MySQL", "src": "mysql" },
+						{ "description": "jQuery", "src": "jquery" }
+					],
+					works:[
+						// Web con rep
+						{ "name": "TarjetasGrama", "url": "http://orionpublicidad.com/tarjetasgrama", "src": "tarjetasgrama" },
+						{ "name": "Registel", "url": "http://registelcolombia.com", "src": "registel" },
+						{ "name": "Difamm Ingeniería", "url": "http://difammingenieria.com", "src": "difamm" },
+						{ "name": "Acceautos", "url": "http://acceautos.com.co", "src": "acceautos" },
+						{ "name": "Atencion Integral", "url": "https://orionpublicidad.com/atencionintegralencasa", "src": "aic" },
+						// { "name": "Atencion Integral", "url": "works/atencionintegralencasa/index.html", "src": "aic" },
+						{ "name": "Sirot", "url": "http://sirotsas.com/", "src": "sirot" },
+						// { "name": "Sirot", "url": "works/sirot/index.html", "src": "sirot" },
+						{ "name": "Quirúrgicamente", "url": "http://quirurgicamente.com/", "src": "quirurgicamente" },
+						// { "name": "Quirúrgicamente", "url": "works/quirurgicamente/index.html", "src": "quirurgicamente" },
+						// { "name": "Liberate Plus", "url": "http://liberateplus.com/", "src": "liberateplus" },
+						{ "name": "Liberate Plus", "url": "works/liberateplus/index.html", "src": "liberateplus" },
+						// Web sin rep
+						{ "name": "Webmodels", "url": "http://webmodelsacademy.com/app", "src": "webmodelsacademy" },
+						{ "name": "CPA Consultoría", "url": "http://cpaconsultoria.com.co", "src": "cpa" },
+						// Local
+						{ "name": "Hispanic", "url": "works/hispanictaxinc/index.html", "src": "hispanic" },
+						{ "name": "Grazzia", "url": "works/grazzia/index.html", "src": "grazzia" },
+						{ "name": "Commodities", "url": "works/commodities/index.html", "src": "commodities" },
+						{ "name": "Helmbrand", "url": "works/helmbrand/index.html", "src": "helmbrand" },
+						{ "name": "Mondragon", "url": "works/mondragon/index.html", "src": "mondragon" },
+						{ "name": "Multipolimeros", "url": "works/multipolimeros/index.html", "src": "multipolimeros" },
+						{ "name": "Orion", "url": "works/orion/index.html", "src": "orion" },
+						{ "name": "Trazo al paso", "url": "works/trazoalpaso/index.html", "src": "trazoalpaso" }
+					],
+					templates:[
+						[
+							{ "name": "Agency", "url": "templates/fixed/agency/index.html" },
+							{ "name": "Brandy", "url": "templates/fixed/brandy/index.html" },
+							{ "name": "Caminar", "url": "templates/fixed/brandy/index.html" },
+							{ "name": "Dope 1", "url": "templates/fixed/dope/index.html" },
+						],[
+							{ "name": "Dope 2", "url": "templates/fixed/dope/index2.html" },
+							{ "name": "Dope 3", "url": "templates/fixed/dope/index3.html" },
+							{ "name": "Spa", "url": "templates/fixed/spa/index.html" },
+							{ "name": "Trimcolor", "url": "templates/fixed/trimcolor/index.html" },
+						],[
+							{ "name": "Triscolor", "url": "templates/fixed/triscolor/index.html" },
+							{ "name": "Forty", "url": "templates/tofix/forty/index.html" },
+							{ "name": "Multiverse", "url": "templates/tofix/multiverse/index.html" },
+							{ "name": "Newline", "url": "templates/tofix/newline/index.html" },
+						],[
+							{ "name": "Parsa", "url": "templates/tofix/parsa/index.html" },
+							{ "name": "Rapoo", "url": "templates/tofix/rapoo/index.html" },
+							{ "name": "Rapoo 2", "url": "templates/tofix/rapoo/index-2.html" },
+							{ "name": "Rapoo 3", "url": "templates/tofix/rapoo/index-3.html" },
+						],[
+							{ "name": "Rapoo 4", "url": "templates/tofix/rapoo/index-4.html" },
+							{ "name": "Slant", "url": "templates/tofix/slant/index.html" },
+							{ "name": "Stylish", "url": "templates/tofix/stylish/index.html" }
+						]
+					]
+				}
+			});
+		</script>
+	</body>
 </html>

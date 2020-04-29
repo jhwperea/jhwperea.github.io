@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="icon" href="img/quirurgicamente.png">
+		<title>Quirúrgicamente</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			::-webkit-scrollbar{ width: 5px; height: 5px }
+			::-webkit-scrollbar-track{ background-color: rgba(0,0,0,.1) }
+			::-webkit-scrollbar-thumb{ background-color: rgba(0,0,0,.5) }
+			::-webkit-scrollbar-thumb:hover{ background-color: rgba(0,0,0,1) }
+			body{ font-family: 'verdana' !important }
+			.full{ width: 100% !important }
+			.shadowed{ box-shadow: 1px 2px 5px rgba(0, 0, 0, .5) !important }
+			.bg-primary{ background-color: rgba(25, 42, 86, 1) !important }
+			.text-primary{ color: rgba(25, 42, 86, 1) !important }
+			.bordered{ border: solid 1px !important }
+			.morado{ color: #662D90 !important }
+			.bg-morado{ background-color: #662D90 !important }
+			.azul{ color: #70BCBD !important }
+			a{ text-decoration: none !important; color: inherit !important }
+			.form-control::placeholder{ color: white !important }
+			.form-control{
+				background-color: #70BCBD !important;
+				color: white !important;
+				font-size: 150%;
+				margin-top: 10px
+			}
+			.selected{
+				background-color: #70BCBD !important;
+				color: white !important
+			}
+		</style>
+		<!-- Facebook Pixel Code -->
+			<script>
+				!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+				n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+				if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+				n.queue=[];t=b.createElement(e);t.async=!0;
+				t.src=v;s=b.getElementsByTagName(e)[0];
+				s.parentNode.insertBefore(t,s)}(window,document,'script',
+				'https://connect.facebook.net/en_US/fbevents.js');
+				fbq('init', '522510458301093'); 
+				fbq('track', 'PageView');
+			</script>
+			<noscript>
+				<img height="1" width="1" src="https://www.facebook.com/tr?id=522510458301093&ev=PageView&noscript=1"/>
+			</noscript>
+	</head>
+	<body class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 pl-0">
+				<img src="img/guia-de-medicos-en-colombia-quirurgicamente.jpg" class="img-fluid">
+			</div>
+			<div class="col-md-6 px-5">
+				<img src="img/quirurgicamente-medicos-en-colombia.png" class="img-fluid full">
+				<h1 class="text-right px-5">
+					<strong class="morado">Si eres Médico y realizas</strong><br>
+					<span class="azul">Cirugías ó Tratamientos</span><br>
+					<strong class="morado">llega a pacientes extranjeros</strong><br>
+					<span class="azul">en poco tiempo.</span>
+				</h1>
+			</div>
+		</div>
+		<div class="row" style="background-image: url('img/banner-quirurgicamente-medicos-en-colombia.jpg'); background-size: cover; background-repeat: no-repeat;">
+			<div class="col-12 text-center p-5">
+				<h1 class="text-white py-3">Únete a nuestra comunidad de Médicos Colombianos</h1>
+				<button class="btn morado bg-white btn-lg py-3 px-5">Gratis</button>
+			</div>
+		</div>
+		<form class="row p-5" method="post" enctype="multipart/form-data" action="send.php">
+			<div class="col-12 text-center"><h1 class="morado">Adjunta tus datos y haz parte de nuestra plataforma</h1></div>
+			<div class="col-md-6"><input type="text" class="form-control" name="nombre_medico" placeholder="Nombre de Médico"></div>
+			<div class="col-md-6"><input type="text" class="form-control" name="categoria" placeholder="Especialización o categoria"></div>
+			<div class="col-md-12"><input type="text" class="form-control" name="descripcion" placeholder="Descripción"></div>
+			<div class="col-md-12"><input type="text" class="form-control" name="servicios_ofrecidos" placeholder="Servicios Ofrecidos"></div>
+			<div class="col-md-6"><input type="text" class="form-control" name="servicio_1_destacado" placeholder="Servicio 1 destacado"></div>
+			<div class="col-md-6"><input type="text" class="form-control" name="precio_servicio_1_destacado" placeholder="Precio del servicio 1 destacado"></div>
+			<div class="col-md-6"><input type="text" class="form-control" name="servicio_2_destacado" placeholder="Servicio 2 destacado"></div>
+			<div class="col-md-6"><input type="text" class="form-control" name="precio_servicio_2_destacado" placeholder="Precio del servicio 2 destacado"></div>
+			<div class="col-md-6"><input type="text" class="form-control" name="direccion" placeholder="Direccion"></div>
+			<div class="col-md-6"><input type="text" class="form-control" name="ciudad" placeholder="Ciudad"></div>
+			<div class="col-md-6"><input type="text" class="form-control" name="celular" placeholder="Celular"></div>
+			<div class="col-md-6"><input type="text" class="form-control" name="telefono_clinica" placeholder="Telefono clinica"></div>
+			<div class="col-md-6"><input type="text" class="form-control" name="correo_electronico" placeholder="Correo electronico"></div>
+			<div class="col-md-6 pt-3">
+				<div class="custom-file">
+					<input type="file" class="custom-file-input" name="adjuntar_fotos" id="customFile">
+			    <label class="custom-file-label" for="customFile" data-browse="Buscar">Adjuntar fotos</label>
+				</div>
+			</div>
+			<div class="col-12 text-center pt-5"><button type="submit" class="btn bg-morado text-white btn-lg py-3 px-5">Enviar</button></div>
+		</form>
+		<div class="row bg-morado p-5">
+			<div class="col-md-4 px-5 text-center">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="img/quirurgicamente-icono3.png" class="img-fluid">
+					</div>
+					<div class="col">
+						<h2 class="text-white">Plataforma de alta exposición</h2>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 px-5 text-center">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="img/quirurgicamente-icono1.png" class="img-fluid">
+					</div>
+					<div class="col">
+						<h2 class="text-white">Público extranjero</h2>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 px-5 text-center">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="img/quirurgicamente-icono2.png" class="img-fluid">
+					</div>
+					<div class="col">
+						<h2 class="text-white">Captación de clientes</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(".custom-file-input").on("change", function() {
+		  var fileName = $(this).val().split("\\").pop();
+		  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+		});
+	</script>
+</html>
