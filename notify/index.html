@@ -1,30 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <meta charset="utf-8" />
 <title>Notify.js demo</title>
 <meta name="description" content="" />
 <meta name="author" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="robots" content="noindex, nofollow" />
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
 <style>
-	button {
-			width: 100px;
-			height: 44px;
-	}
+    button {
+        width: 100px;
+        height: 44px;
+    }
 </style>
-
 </head>
 <body>
-  <h1>Notify.js demo</h1>
-  <!-- <p>Notify.js is a simple wrapper for the Web Notification API. The GitHub repo is <a href="https://github.com/alexgibson/notify.js">here</a>.</p> -->
-  <p>Click the button below to fire up a notification. Currently supported in Chrome, Safari, Firefox and Firefox OS.</p>
-  <button id="my-button" class="btn btn-outline-primary">Notify Me!</button>
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Step 1</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Step 2</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Step 3</a>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    <table class="table table-striped">
+        <tr>
+            <td>Datos</td>
+            <td>Datos</td>
+            <td>Datos</td>
+        </tr>
+        <tr>
+            <td>Datos</td>
+            <td>Datos</td>
+            <td>Datos</td>
+        </tr>
+        <tr>
+            <td>Datos</td>
+            <td>Datos</td>
+            <td>Datos</td>
+        </tr>
+    </table>
+  <button id="my-button" class="btn btn-outline-primary">Continuar</button>
+    </div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatem recusandae autem harum officiis doloremque atque illum mollitia est odio ipsum, quas molestiae magni nam corporis? Quaerat rem, voluptatibus eaque.</p>
+    <hr>
+    <table class="table table-striped">
+        <tr>
+            <td>Datos</td>
+            <td>Datos</td>
+            <td>Datos</td>
+        </tr>
+        <tr>
+            <td>Datos</td>
+            <td>Datos</td>
+            <td>Datos</td>
+        </tr>
+        <tr>
+            <td>Datos</td>
+            <td>Datos</td>
+            <td>Datos</td>
+        </tr>
+    </table>
+    <button onclick="showNotif()" class="btn btn-outline-dark">Votar</button>
+  </div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+</div>
+<!-- </head> -->
+<!-- <body> -->
 
   <!-- JavaScript assets -->
-  <script src="notify.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="lib/notify.js"></script>
   <script>
     document.getElementById('my-button').addEventListener('click', function () {
 
@@ -54,9 +109,9 @@
         }
 
         function doNotification () {
-            var myNotification = new Notify('Yo dawg!', {
-                body: 'This is an awesome notification',
-                tag: 'My unique id',
+            var myNotification = new Notify('Notificación de Webasamblea!', {
+                body: 'Esta es una notificación de prueba',
+                tag: 'Id',
                 notifyShow: onShowNotification,
                 notifyClose: onCloseNotification,
                 notifyClick: onClickNotification,
@@ -64,7 +119,7 @@
                 timeout: 4
             });
 
-            myNotification.show();
+            // myNotification.show();
         }
 
         if (!Notify.needsPermission) {
@@ -74,6 +129,9 @@
         }
 
     }, false);
+    function showNotif(){
+        myNotification.show();
+    }
   </script>
 </body>
 </html>
