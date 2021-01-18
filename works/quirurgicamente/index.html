@@ -1,1 +1,218 @@
-<script>window.location.href = "hazpartedelacomunidad/";</script>
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Quirurgicamente</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="img/icon.png">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap">
+		<style>
+			::-webkit-scrollbar{ width: 0px; height: 0px }
+			.bg-morado-waist{ background-image: url('img/quirurgicamente-colombia-fondo.png'); background-size: cover }
+			.bg-morado{ background-color: #9B3885 !important }
+			.morado{ color: #9B3885 !important }
+			.bg-azul{ background-color: #009084 !important }
+			.azul{ color: #009084 !important }
+			body{ font-family: 'Roboto'; font-weight: 400 !important; margin: 0; padding: 0; }
+			strong{ font-weight: 900 !important }
+			.img-fluid{ width: 100% !important }
+			.bradiusd{ border-radius: 0 0 250px 0 }
+			.img-fixed{ position: fixed !important; z-index: 99 !important }
+			#dots-1{ top: -7em !important; left: 30%; width: 40% }
+			#dots-2{ top: -7em !important; left: 0%; width: 40% }
+			#dots-3{ top: 0em !important; left: 0%; width: 30% }
+			#dots-4{ bottom: -7em !important; left: 40%; width: 30% }
+			@media(min-width: 780px){ section{ width: 100%; min-height: 100vh } }
+		</style>
+	</head>
+	<body>
+		<main id="app" class="p-0 m-0">
+			<div class="d-none d-sm-none d-md-block">
+				<section v-if="step == 'home'" class="container-fluid bg-morado-waist">
+					<div class="row pb-5" style="min-height: 80vh">
+						<div class="col text-white">
+							<div class="row">
+								<div class="col-md-3 bg-white bradiusd">
+									<div class="row">
+										<div class="col-md-8 col-6">
+											<img src="img/logo.png" class="img-fluid">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-8 mx-auto my-5">
+									<p class="display-4 text-center">¿Buscas <strong>CIRUGÍA</strong><br>o tratamiento <strong>médico</strong><br>en <strong>Colombia</strong>?</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col"></div>
+								<div class="col-md-4">
+									<button class="btn btn-block btn-light morado" @click="step = 'uno'"><h2><strong>Siguiente</strong></h2></button>
+								</div>
+								<div class="col-1"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row bg-white py-3">
+						<div class="col-md-5 ml-auto py-3 text-center">
+							<h3 class="morado"><strong>Regístrate Ahora</strong></h3>
+							<p class="azul">Es seguro, fácil y Gratis</p>
+						</div>
+						<div class="col-md-4 mr-auto py-3">
+							<img src="img/pasos.jpg" class="img-fluid">
+						</div>
+					</div>
+				</section>
+				<section v-if="step == 'uno'" class="container-fluid" style="min-height: 100vh">
+					<img src="img/quirurgicamente-cirugia-flecha2.png" id="dots-1" class="img-fixed">
+					<div class="row">
+						<div class="col-md-6 text-center" style="padding: 13em 1em 5em 1em">
+							<h2 class="morado display-4"><strong>Registrate Ahora</strong></h2>
+							<p class="azul display-4">Es seguro, fácil y Gratis</p>
+							<p class="h2">Sigue los pasos, con tu información<br>seleccionamos los médicos que se<br>ajustan a tu tipo de tratamiento, ciudad<br>y presupuesto, <strong class="morado">contáctalo, cotiza<br>y listo.</strong></p>
+						</div>
+						<div class="col-md-6 bg-azul text-center" style="min-height: 100vh; padding: 6em 1em 5em 1em">
+							<h2 class="text-white display-4 pb-5"><strong>PASO 1</strong></h2>
+							<p class="display-4 text-white">¿De donde eres?</p>
+							<strong class="text-white h1">COLOMBIA</strong>
+							<select class="form-control morado col-md-6 mx-auto mb-3">
+								<option value="Selecciona una ciudad">Selecciona una ciudad</option>
+								<option value="BOGOTÁ">BOGOTÁ</option>
+								<option value="MEDELLÍN">MEDELLÍN</option>
+								<option value="CALI">CALI</option>
+								<option value="PALMIRA">PALMIRA</option>
+							</select>
+							<strong class="text-white h1">EXTRANJERO</strong>
+							<input class="form-control morado col-md-6 mx-auto mb-3" placeholder="MENCIONA TU PAÍS">
+							<button class="btn btn-light morado" @click="step = 'dos'"><h2><strong>Siguiente</strong></h2></button>
+						</div>
+					</div>
+				</section>
+				<section v-if="step == 'dos'" class="container-flow bg-morado" style="min-height: 100vh; padding-top: 5em">
+					<img src="img/quirurgicamente-cirugia-flecha.png" id="dots-2" class="img-fixed">
+					<div class="row">
+						<div class="col-md-5"></div>
+						<div class="col-md-6">
+							<h2 class="text-white display-4 pb-5"><strong>PASO 2</strong></h2>
+							<div class="row">
+								<div class="col-md-6"><p class="h2 text-white">Nombre:</p></div>
+								<div class="col-md-6"><input class="form-control morado col-md-6 mx-auto mb-3"></div>
+							</div>
+							<div class="row">
+								<div class="col-md-6"><p class="h2 text-white">Edad:</p></div>
+								<div class="col-md-6"><input class="form-control morado col-md-6 mx-auto mb-3"></div>
+							</div>
+							<div class="row">
+								<div class="col-md-6"><p class="h2 text-white">Telefono (WhatsApp):</p></div>
+								<div class="col-md-6"><input class="form-control morado col-md-6 mx-auto mb-3"></div>
+							</div>
+							<div class="row">
+								<div class="col-md-6"><p class="h2 text-white">Correo electrónico:</p></div>
+								<div class="col-md-6"><input class="form-control morado col-md-6 mx-auto mb-3"></div>
+							</div>
+							<button class="btn btn-light morado"  @click="step = 'tres'"><h2><strong>Siguiente</strong></h2></button>
+						</div>
+					</div>
+				</section>
+				<section v-if="step == 'tres'" class="container-flow bg-azul" style="min-height: 100vh; padding-top: 5em">
+					<img src="img/quirurgicamente-cirugia-flecha2.png" id="dots-3" class="img-fixed">
+					<div class="row pb-3">
+						<div class="col-md-4"></div>
+						<div class="col-md-6">
+							<h2 class="text-white display-4 pb-5"><strong>PASO 3</strong></h2>
+							<p class="display-4 text-white">¿Que tipo de cirugía buscas?</p>
+							<div class="row">
+								<div class="col-md-6"><p class="h2 text-white">Tipo de cirugía:</p></div>
+								<div class="col-md-6"><input class="form-control morado mx-auto mb-3"></div>
+							</div>
+							<div class="row">
+								<div class="col-md-6"><p class="h2 text-white">Específica:</p></div>
+								<div class="col-md-6 text-center">
+									<input class="form-control morado mx-auto mb-3">
+									<span class="text-white">Ej: Gluteos</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row bg-morado pt-3 pb-5">
+						<div class="col-md-4"></div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-6"><p class="h2 text-white">Presupuesto $$:</p></div>
+								<div class="col-md-6"><input class="form-control morado colmx-auto mb-3"></div>
+							</div>
+							<button class="btn btn-light morado" @click="step = 'gracias'"><h2><strong>Siguiente</strong></h2></button>
+						</div>
+					</div>
+				</section>
+				<section v-if="step == 'gracias'" class="container-fluid" style="min-height: 100vh">
+					<img src="img/quirurgicamente-cirugia-flecha.png" id="dots-4" class="img-fixed">
+					<div class="row">
+						<div class="col-md-6 text-center" style="min-height: 100vh; padding: 6em 1em 5em 1em">
+							<h2 class="azul display-1"><strong>¡Gracias!</strong></h2><br><br>
+							<p class="morado" style="font-size: 180%"><strong>Enviaremos la</strong> información<br><span class="azul"  style="font-size: 150%"><strong style="font-size: 120%">de los Médicos</strong><br>seleccionados<br></span><strong>para tí</strong>, de acuerdo a tus<br><strong>requerimientos</strong></p>
+						</div>
+						<div class="col-md-6 bg-morado text-center" style="min-height: 100vh; padding: 6em 1em 5em 1em">
+							<div class="p-5"><img src="img/logo-blanco.png" class="img-fluid p-5"></div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="d-block d-md-none">
+				<section class="container-fluid">
+					<div class="row">
+						<div class="col-6 mx-auto bg-white">
+							<img src="img/logo.png" class="img-fluid">
+						</div>
+					</div>
+					<div class="row">
+						<img src="img/v1/banner.png" class="img-fluid">
+						<img src="img/v1/1.png" class="img-fluid">
+						<div class="col">
+							<strong class="azul">COLOMBIA</strong>
+							<select class="form-control morado col-md-6 mx-auto mb-3">
+								<option value="Selecciona una ciudad">Selecciona una ciudad</option>
+								<option value="BOGOTÁ">BOGOTÁ</option>
+								<option value="MEDELLÍN">MEDELLÍN</option>
+								<option value="CALI">CALI</option>
+								<option value="PALMIRA">PALMIRA</option>
+							</select>
+							<strong class="azul">EXTRANJERO</strong>
+							<input class="form-control morado col-md-6 mx-auto mb-3" placeholder="MENCIONA TU PAÍS">
+						</div>
+						<img src="img/v1/2.png" class="img-fluid">
+						<div class="col pt-3">
+							<input class="form-control morado col-md-6 mx-auto mb-3" placeholder="Nombre">
+							<input class="form-control morado col-md-6 mx-auto mb-3" placeholder="Edad">
+							<input class="form-control morado col-md-6 mx-auto mb-3" placeholder="Telefono (WhatsApp)">
+							<input class="form-control morado col-md-6 mx-auto mb-3" placeholder="Correo electrónico">
+						</div>
+						<img src="img/v1/3.png" class="img-fluid">
+						<div class="col pt-3">
+							<input class="form-control morado mx-auto mb-3" placeholder="Tipo de cirugía">
+							<input class="form-control morado mx-auto mb-3" placeholder="Especifica, Ej: Glúteos">
+						</div>
+						<img src="img/v1/listo.png" class="img-fluid">
+						<div class="col bg-morado text-center pt-5">
+							<button class="btn btn-light morado">
+								<strong>Enviar datos</strong>
+							</button>
+							<img src="img/logo-blanco.png" class="img-fluid p-5">
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		<script src="https://unpkg.com/vue@2.6.10/dist/vue.min.js"></script>
+		<script>
+			new Vue({
+				el: '#app',
+				data:{
+					step: 'home',
+				}
+			})
+		</script>
+	</body>
+</html>
