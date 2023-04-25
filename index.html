@@ -1,67 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="utf-8">
-	<title>Jhonier Alejandro Perea Derazo</title>
-	<meta name="Author" content="Jhonier Alejandro Perea Derazo, Jhwperea">
-	<link rel="icon" href="https://icons.iconarchive.com/icons/vexels/office/256/bulb-icon.png">
-	<meta http-equiv='X-UA-Compatible' content='IE=Edge'>
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="mobile-web-app-status-bar-style" content="black">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee|Play">
-	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-	<article class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
-		<aside class="mdl-layout__drawer mdl-shadow--8dp mdl-color--grey-100">
-			<img src="https://avatars3.githubusercontent.com/u/23360285?s=460&v=4" class="wide">
-			<nav class="mdl-navigation">
-				<a class="mdl-navigation__link" href="#me"><i class="material-icons mdl-color-text--primary">lightbulb_outline</i>&nbsp; <strong>About me</strong></a>
-				<a class="mdl-navigation__link" href="#works"><i class="material-icons mdl-color-text--primary">code</i>&nbsp; <strong>Works</strong></a>
-				<a class="mdl-navigation__link" href="mailto:jhwperea@gmail.com"><i class="material-icons mdl-color-text--primary">mail_outline</i>&nbsp; <strong>Email</strong></a>
-				<a class="mdl-navigation__link" href="https://wa.me/573013127037" target="_blank"><i class="fa fa-whatsapp mdl-color-text--primary" style="font-weight: 800; font-size: 150%"></i>&nbsp; <strong>Whatsapp</strong></a>
-				<a class="mdl-navigation__link" href="https://github.com/jhwperea" target="_blank"><i class="fa fa-github mdl-color-text--primary" style="font-weight: 800; font-size: 150%"></i>&nbsp; <strong>Github</strong></a>
-				<a class="mdl-navigation__link" href="https://www.linkedin.com/in/jhonierperea/" target="_blank"><i class="fa fa-linkedin mdl-color-text--primary" style="font-weight: 800; font-size: 150%"></i>&nbsp; <strong>Linkedin</strong></a>
-			</nav>
-		</aside>
-		<main class="mdl-layout__content" id="app">
-			<section class="mdl-grid" id="me">
-				<div class="mdl-cell text-center wide" id="me-content">
-					<h4 class="bungee text-center mdl-color-text--white text-shadow" style="font-size: 300%">Jhonier Alejandro Perea Derazo</h4>
-					<p class="mdl-color-text--white text-shadow">Software Developer / Web Designer</p>
-					<a href="assets/cv-es.pdf" target="_blank">Español</a> - - - - - <a href="assets/cv-en.pdf" target="_blank">Inglés</a>
-				</div>
-			</section>
-			<section class="mdl-grid padding mdl-shadow--8dp" id="skills">
-				<article v-for="skill in skills" class="mdl-cell mdl-cell--1-col-phone mdl-cell--2-col-tablet mdl-cell--1-col-desktop">
-					<img :src="'assets/img/skills/'+skill.src+'.png'" class="wide">
-				</article>
-			</section>
-			<section class="mdl-grid padding" id="works">
-				<div class="mdl-cell text-center wide" id="works-content">
-					<div class="mdl-grid">
-						<div class="mdl-cell text-center wide">
-							<h4 class="bungee mdl-color-text--white text-shadow">Works</h4>
-						</div>
-						<article v-for="work in works" class="mdl-cell mdl-cell--3-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-color--white mdl-shadow--4dp">
-							<img :src="'assets/img/works/'+work.src+'.png'" class="wide">
-							<h5 class="mdl-color-text--primary text-center" v-text="work.name"></h5>
-							<a v-if="work.url" :href="work.url" target="_blank">Ver</a>
-						</article>
+	<head>
+		<meta charset="utf-8">
+		<title>Jhonier Alejandro Perea Derazo</title>
+	  <meta name="application-name" content="Jhonier Alejandro Perea Derazo">
+		<meta name="Author" content="Jhonier Alejandro Perea Derazo, Jhwperea">
+		<meta http-equiv='X-UA-Compatible' content='IE=Edge'>
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	  <meta name="msapplication-starturl" content="/">
+	  <meta name="msapplication-TileColor" content="black">
+	  <meta name="theme-color" content="black">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+		<link rel="icon" href="https://icons.iconarchive.com/icons/vexels/office/256/bulb-icon.png">
+	  <link rel="apple-touch-icon" sizes="180x180" href="https://icons.iconarchive.com/icons/vexels/office/256/bulb-icon.png">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee|Play">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
+	<body>
+		<article class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+			<aside class="mdl-layout__drawer mdl-shadow--8dp mdl-color--grey-100">
+				<img src="https://avatars3.githubusercontent.com/u/23360285?s=460&v=4" class="wide">
+				<nav class="mdl-navigation">
+					<a class="mdl-navigation__link" href="#me"><i class="material-icons mdl-color-text--primary">lightbulb_outline</i>&nbsp; <strong>About me</strong></a>
+					<a class="mdl-navigation__link" href="#works"><i class="material-icons mdl-color-text--primary">code</i>&nbsp; <strong>Works</strong></a>
+					<a class="mdl-navigation__link" href="mailto:jhwperea@gmail.com"><i class="material-icons mdl-color-text--primary">mail_outline</i>&nbsp; <strong>Email</strong></a>
+					<a class="mdl-navigation__link" href="https://wa.me/573013127037" target="_blank"><i class="fa fa-whatsapp mdl-color-text--primary" style=""></i>&nbsp; <strong>Whatsapp</strong></a>
+					<a class="mdl-navigation__link" href="https://github.com/jhwperea" target="_blank"><i class="fa fa-github mdl-color-text--primary" style=""></i>&nbsp; <strong>Github</strong></a>
+					<a class="mdl-navigation__link" href="https://www.linkedin.com/in/jhonierperea/" target="_blank"><i class="fa fa-linkedin mdl-color-text--primary" style=""></i>&nbsp; <strong>Linkedin</strong></a>
+				</nav>
+			</aside>
+			<main class="mdl-layout__content" id="app">
+				<section class="mdl-grid" id="me">
+					<div class="mdl-cell text-center wide" id="me-content">
+						<h3 class="bungee text-center mdl-color-text--white text-shadow">Jhonier Alejandro Perea Derazo</h3>
+						<p class="mdl-color-text--white text-shadow">
+							Software Developer
+							<a href="assets/cv.pdf" target="_blank">/</a>
+							Web Designer
+						</p>
 					</div>
-				</div>
-			</section>
-		</main>
-	</article>
-</body>
-<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-<script src="https://unpkg.com/axios@0.19.0/dist/axios.min.js"></script>
-<script src="assets/js/app.js"></script>
+				</section>
+				<section class="mdl-grid padding mdl-shadow--8dp" id="skills">
+					<article v-for="skill in skills" class="mdl-cell mdl-cell--1-col-phone mdl-cell--2-col-tablet mdl-cell--1-col-desktop">
+						<img :src="'assets/img/skills/'+skill.src+'.png'" class="wide">
+					</article>
+				</section>
+				<section class="mdl-grid padding" id="works">
+					<div class="mdl-cell text-center wide" id="works-content">
+						<div class="mdl-grid">
+							<div class="mdl-cell text-center wide">
+								<h4 class="bungee mdl-color-text--white text-shadow">Works</h4>
+							</div>
+							<a v-for="work in works" :href="work.url" target="_blank" class="mdl-cell mdl-cell--3-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-color--white mdl-shadow--4dp">
+								<img :src="'assets/img/works/'+work.src+'.png'" class="wide">
+								<h5 class="mdl-color-text--primary text-center" v-text="work.name"></h5>
+							</a>
+						</div>
+					</div>
+				</section>
+			</main>
+		</article>
+	</body>
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+	<script src="https://unpkg.com/axios@0.19.0/dist/axios.min.js"></script>
+	<script src="assets/js/app.js"></script>
 </html>

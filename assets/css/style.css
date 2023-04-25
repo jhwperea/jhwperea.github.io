@@ -7,6 +7,7 @@ body *{ font-family: 'Play', sans-serif }
 .wide{ width: 100%; padding: 0 }
 .padding{ padding: 2.5% 5% }
 .rounded{ border-radius: 10px }
+.fa{ font-weight: 800; font-size: 150% }
 p{ font-size: 1.5em; color: gray }
 .text-center{ text-align: center !important }
 .text-justify{ text-align: justify !important }

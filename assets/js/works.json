@@ -1,7 +1,8 @@
 [
+	{ "name": "Opentech", "src": "opentech", "url": "https://opentechstore.co" },
 	{ "name": "Biokurk", "src": "biokurk", "url": "https://biokurk.com" },
-	{ "name": "Sirot", "src": "sirot", "url": "http://sirotsas.com" },
-	{ "name": "Registel", "src": "registel", "url": "http://registelcolombia.com" },
+	{ "name": "Sirot", "src": "sirot", "url": "https://sirotsas.com" },
+	{ "name": "Registel", "src": "registel", "url": "https://registelcolombia.com" },
 	{ "name": "Acceautos", "src": "acceautos", "url": "http://acceautos.com.co" },
 	{ "name": "Difamm Ingeniería", "src": "difamm" },
 	{ "name": "TarjetasGrama", "src": "tarjetasgrama" },
