@@ -1,25 +1,15 @@
-::-webkit-scrollbar{ width: 8px }
-::-webkit-scrollbar-track{ background-color: rgba(0, 0, 0, .1) }
+::-webkit-scrollbar{ width: 3px }
 ::-webkit-scrollbar-thumb{ background-color: rgba(0, 0, 0, .5) }
-::-webkit-scrollbar-thumb:hover{ background-color: rgba(0, 0, 0, .8) }
-body *{ font-family: 'Play', sans-serif }
-.bungee{ font-family: 'Bungee', cursive }
-.wide{ width: 100%; padding: 0 }
-.padding{ padding: 2.5% 5% }
-.rounded{ border-radius: 10px }
-.fa{ font-weight: 800; font-size: 150% }
-p{ font-size: 1.5em; color: gray }
-.text-center{ text-align: center !important }
-.text-justify{ text-align: justify !important }
-.text-right{ text-align: right !important }
-a,a:hover{ text-decoration: none; cursor: pointer; color: gray !important }
-.mdl-layout__header{ display: block !important }
-.mdl-layout__drawer{ border: 0px }
-.mdl-layout__drawer-button{ color: white; -webkit-text-stroke: 1px black }
-.avatar{ width: 50px }
-#me{ background-image: url('https://static.vecteezy.com/system/resources/thumbnails/000/692/296/small/seamless-pattern-of-exotic-jungle-tropical-golden-palm-leaves-on-black-background.jpg'); background-attachment: fixed; margin: 0; padding: 0 }
-#me-content{ background-color: rgba(0, 0, 0, .7); margin: 0; padding: 10% 1em }
-#works{ background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS85gctFmpZzCJUGP8brxjt8k8FViJzUWQrWQ&usqp=CAU'); background-attachment: fixed; margin: 0; padding: 0 }
-#works-content{ background-color: rgba(0, 0, 0, .9); margin: 0; padding: 1em }
-#btn-list{ position: fixed; bottom: 3px; right: 10px; background-color: transparent; border: 0px; color: rgba(255, 255, 255, 0.1); }
+html, body{ scroll-behavior: smooth; padding: 0; margin: 0 }
+.animated{ -webkit-transition: 0.5s; -moz-transition: 0.5s; transition: 0.5s }
+*{ font-family: 'Play' }
+.bungee{ font-family: 'Bungee' }
+.text-left{ text-align: left !important }
+.text-primary{ color: steelblue !important }
+.text-shadow{ text-shadow: 0 0 5px black }
+a, a:hover{ text-decoration: none; cursor: pointer }
+.bg-texture{ background-image: url('../img/bg.jpg') }
+.bg-blue{ background-image: url('../img/bg-blue.jpg'); background-size: cover }
 @media(max-width: 1024px){ ::-webkit-scrollbar{ width: 0px } }
+.sidebar{ position: fixed; top: 0; right: 0; bottom: 0; left: -200px; width: 200px; z-index: 2 }
+#side:checked+main .toggle, #side:checked+main .sidebar{ transform: translateX(200px) }
