@@ -2,18 +2,18 @@
 	{ "description": "Sass", "src": "sass" },
 	{ "description": "Bootstrap", "src": "bootstrap" },
 	{ "description": "Material Design", "src": "materialdesign" },
+	{ "description": "Vue JS", "src": "vue" },
 	{ "description": "Onsen UI", "src": "onsenui" },
 	{ "description": "Ionic", "src": "ionic" },
-	{ "description": "Vue JS", "src": "vue" },
 	{ "description": "jQuery", "src": "jquery" },
 	{ "description": "Cordova", "src": "cordova" },
 	{ "description": "Webpack", "src": "webpack" },
 	{ "description": "Laravel", "src": "laravel" },
-	{ "description": "PostgreSQL", "src": "postgresql" },
 	{ "description": "WordPress", "src": "wordpress" },
 	{ "description": "Html 5", "src": "html5" },
 	{ "description": "Css 3", "src": "css3" },
 	{ "description": "Javascript", "src": "js" },
 	{ "description": "Php 7", "src": "php7" },
-	{ "description": "MySQL", "src": "mysql" }
+	{ "description": "MySQL", "src": "mysql" },
+	{ "description": "PostgreSQL", "src": "postgresql" }
 ]
