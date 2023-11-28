@@ -1,74 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="utf-8">
-		<title>Jhonier Alejandro Perea Derazo</title>
-	  <meta name="application-name" content="Jhonier Alejandro Perea Derazo">
-		<meta name="Author" content="Jhonier Alejandro Perea Derazo, Jhwperea">
-		<meta http-equiv='X-UA-Compatible' content='IE=Edge'>
-		<meta name="mobile-web-app-capable" content="yes">
-		<meta name="mobile-web-app-status-bar-style" content="black">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	  <meta name="msapplication-starturl" content="/">
-	  <meta name="msapplication-TileColor" content="black">
-	  <meta name="theme-color" content="black">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
-		<link rel="icon" href="https://icons.iconarchive.com/icons/vexels/office/256/bulb-icon.png">
-	  <link rel="apple-touch-icon" href="https://icons.iconarchive.com/icons/vexels/office/256/bulb-icon.png" sizes="180x180">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee|Play">
-		<link rel="stylesheet" href="assets/css/style.css">
-	</head>
-	<body>
-		<input type="checkbox" id="side" class="d-none">
-		<main class="container-fluid" id="app">
-			<label for="side" class="toggle fixed-top animated text-white p-3 p-md-4 text-shadow"><strong>☰</strong></label>
-			<aside class="sidebar animated shadow bg-texture">
-				<img src="https://avatars3.githubusercontent.com/u/23360285?s=460&v=4" class="img-fluid">
-				<nav class="py-5 px-1 text-left">
-					<a class="text-dark d-block p-4" href="#me"><strong><i class="fa-regular fa-user pe-3"></i>Hello!</strong></a>
-					<a class="text-dark d-block p-4" href="#skills"><strong><i class="fa-solid fa-code pe-3"></i>Skills</strong></a>
-					<a class="text-dark d-block p-4" href="#works"><strong><i class="fa-solid fa-suitcase pe-3"></i>Works</strong></a>
-					<a class="text-dark d-block p-4" href="#contact"><strong><i class="fa-regular fa-envelope pe-3"></i>Contact</strong></a>
-				</nav>
-			</aside>
-			<section class="row py-5 text-center bg-blue text-white" id="me">
-				<div class="col p-5 m-5">
-					<h3 class="bungee mb-3">Jhonier Alejandro <br class="d-md-none"> Perea Derazo</h3>
-					<h4>Software Developer <br class="d-md-none"><span class="d-none d-md-inline-block">/</span> Web Designer</h4>
-					<hr>
-					<a class="btn btn-outline-light" href="#contact">Contact me!</a>
-				</div>
-			</section>
-			<section class="row py-5 px-2 px-md-5 text-center" id="skills">
-				<h4 class="bungee pb-3 text-primary">Skills</h4>
-				<img class="col-3 col-sm-2 col-lg-1 mb-2 mb-lg-5 mx-lg-3" v-for="skill in skills" :src="'assets/img/skills/'+skill.src+'.png'">
-			</section>
-			<section class="row py-5 px-2 px-md-5 text-center bg-texture" id="works">
-				<h4 class="bungee pb-3 text-primary">Works</h4>
-				<a v-for="work in works" :href="work.url" target="_blank" class="col-12 col-sm-6 col-md-4 col-lg-3 p-2">
-					<img :src="'assets/img/works/'+work.src+'.png'" class="img-fluid rounded shadow">
-				</a>
-			</section>
-			<footer class="row py-5 px-2 px-md-5 text-center text-dark" id="contact">
-				<div class="col-12"><h4 class="bungee pb-3 text-primary">Get in touch</h4></div>
-				<div class="col-md-6 mt-md-3">
-					<a class="btn btn-outline-danger rounded-circle p-4 me-2" href="mailto:jhwperea@gmail.com"><i class="fa-regular fa-envelope fa-xl"></i></a>
-					<a class="btn btn-outline-success rounded-circle p-4 me-2" href="https://wa.me/573013127037" target="_blank"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
-					<a class="btn btn-outline-dark rounded-circle p-4 me-2" href="https://github.com/jhwperea" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
-					<a class="btn btn-outline-primary rounded-circle p-4" href="https://www.linkedin.com/in/jhonierperea/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-				</div>
-				<div class="col-md-6 mt-5 mt-md-0">
-					<p>Check out my resume</p>
-					<a class="btn btn-outline-dark me-2" href="assets/EN_JhonierAlejandroPereaDerazo.pdf" target="_blank"><i class="fa-regular fa-file-pdf pe-2"></i>English</a>
-					<a class="btn btn-outline-dark" href="assets/ES_JhonierAlejandroPereaDerazo.pdf" target="_blank"><i class="fa-regular fa-file-pdf pe-2"></i>Spanish</a>
-				</div>
-			</footer>
-		</main>
-	</body>
-	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-	<script src="https://unpkg.com/axios@0.19.0/dist/axios.min.js"></script>
-	<script src="assets/js/app.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <title>Jhonier Alejandro Perea Derazo</title>
+        <meta name="application-name" content="Jhonier Alejandro Perea Derazo">
+        <meta name="Author" content="Jhonier Alejandro Perea Derazo, Jhwperea">
+        <meta http-equiv='X-UA-Compatible' content='IE=Edge'>
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="msapplication-starturl" content="/">
+        <meta name="msapplication-TileColor" content="black">
+        <meta name="theme-color" content="black">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+        <link rel="icon" href="https://icons.iconarchive.com/icons/vexels/office/256/bulb-icon.png">
+        <link rel="apple-touch-icon" href="https://icons.iconarchive.com/icons/vexels/office/256/bulb-icon.png" sizes="180x180">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee|Play">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <main class="container-fluid" id="app">
+            <section class="row py-5 text-center bg-blue text-white" id="me">
+                <div class="col-lg-3 p-4 p-lg-0 ps-lg-5">
+                    <img src="assets/img/p.jpeg" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-lg-8 mx-auto">
+                    <h3 class="bungee my-3 my-lg-5">Jhonier Alejandro <br class="d-md-none"> Perea Derazo</h3>
+                    <h4>Software Developer &nbsp;&nbsp;<br class="d-md-none"><span class="d-none d-md-inline-block">/</span>&nbsp;&nbsp; Web Designer</h4><hr>
+                    <div class="row">
+                        <div class="col-md-6 mt-md-3">
+                            <a class="btn btn-outline-light rounded-circle p-3 me-2" href="https://wa.me/573013127037" target="_blank"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+                            <a class="btn btn-outline-light rounded-circle p-3 me-2" href="https://www.linkedin.com/in/jhonierperea/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                            <a class="btn btn-outline-light rounded-circle p-3 me-2" href="https://github.com/jhwperea" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+                            <a class="btn btn-outline-light rounded-circle p-3 me-2" href="mailto:jhwperea@gmail.com"><i class="fa-regular fa-envelope fa-xl"></i></a>
+                        </div>
+                        <div class="col-md-6 mt-3">
+                            <a class="btn btn-outline-light me-2 mt-2" href="assets/Jhonier_Alejandro_Perea_Derazo-(EN).pdf" target="_blank"><i class="fa-regular fa-file-pdf pe-2"></i>CV English</a>
+                            <a class="btn btn-outline-light mt-2" href="assets/Jhonier_Alejandro_Perea_Derazo-(ES).pdf" target="_blank"><i class="fa-regular fa-file-pdf pe-2"></i>CV Spanish</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="row py-5 px-2 px-md-5 text-center bg-light" id="works">
+                <h4 class="bungee pb-3 text-primary">Recent Works</h4>
+                <a v-for="work in works" :href="work.url" target="_blank" class="col-12 col-sm-6 col-md-4 col-lg-4 p-3">
+                    <img :src="'assets/img/works/'+work.src+'.png'" class="img-fluid rounded shadow">
+                    <p class="text-primary pt-3" v-text="work.name"></p>
+                </a>
+            </section>
+            <section class="row py-5 px-2 px-md-5 text-center bg-texture" id="skills">
+                <h4 class="bungee pb-3 text-primary">Skills</h4>
+                <img class="col-3 col-sm-2 col-lg-1 mb-2 mb-lg-5 mx-lg-3" v-for="skill in skills" :src="'assets/img/skills/'+skill.src+'.png'">
+            </section>
+        </main>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios@0.19.0/dist/axios.min.js"></script>
+    <script src="assets/js/app.js"></script>
 </html>
