@@ -46,9 +46,9 @@
             </section>
             <section class="row py-5 px-2 px-md-5 text-center bg-light" id="works">
                 <h4 class="bungee pb-3 text-primary">Recent Works</h4>
-                <a v-for="work in works" :href="work.url" target="_blank" class="col-12 col-sm-6 col-md-4 col-lg-4 p-3">
+                <a v-for="work in works" :href="work.url" target="_blank" class="col-12 col-sm-6 col-md-4 col-lg-3 p-3">
                     <img :src="'assets/img/works/'+work.src+'.png'" class="img-fluid rounded shadow">
-                    <p class="text-primary pt-3" v-text="work.name"></p>
+                    <h5 class="text-primary mt-3"><strong v-text="work.name"></strong></h5>
                 </a>
             </section>
             <section class="row py-5 px-2 px-md-5 text-center bg-texture" id="skills">
