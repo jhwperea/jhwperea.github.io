@@ -14,6 +14,7 @@
 	{ "description": "Css 3", "src": "css3" },
 	{ "description": "Javascript", "src": "js" },
 	{ "description": "Php 7", "src": "php7" },
+	{ "description": "Node JS", "src": "node" },
 	{ "description": "MySQL", "src": "mysql" },
 	{ "description": "PostgreSQL", "src": "postgresql" }
 ]
