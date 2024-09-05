@@ -7,3 +7,4 @@
 a, a:hover{ text-decoration: none; cursor: pointer }
 .bg-texture{ background-image: url('../img/bg.jpg'); background-attachment: fixed }
 .bg-blue{ background-image: url('../img/bg-blue.jpg'); background-size: cover; background-attachment: fixed }
+.dev{ border: solid 1px red }
