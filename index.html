@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Jhonier Alejandro Perea Derazo</title>
@@ -23,43 +23,74 @@
     </head>
     <body>
         <main class="container-fluid" id="app">
-            <section class="row py-5 text-center bg-blue text-white" id="me">
-                <div class="col-lg-3 p-4 p-lg-0 ps-lg-5">
-                    <img src="assets/img/p.jpeg" class="img-fluid rounded-circle">
-                </div>
-                <div class="col-lg-8 mx-auto">
-                    <h3 class="bungee my-3 my-lg-5">Jhonier Alejandro <br class="d-md-none"> Perea Derazo</h3>
-                    <h4>Software Developer &nbsp;&nbsp;<br class="d-md-none"><span class="d-none d-md-inline-block">/</span>&nbsp;&nbsp; Web Designer</h4><hr>
+            <section class="row p-4 py-5 px-lg-5 text-center bg-black text-white" id="me">
+                <div class="container px-lg-5">
                     <div class="row">
-                        <div class="col-md-6 mt-md-3">
-                            <a class="btn btn-outline-light rounded-circle p-3 me-2" href="https://wa.me/573013127037" target="_blank"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
-                            <a class="btn btn-outline-light rounded-circle p-3 me-2" href="https://www.linkedin.com/in/jhonierperea/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-                            <a class="btn btn-outline-light rounded-circle p-3 me-2" href="https://github.com/jhwperea" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
-                            <a class="btn btn-outline-light rounded-circle p-3 me-2" href="mailto:jhwperea@gmail.com"><i class="fa-regular fa-envelope fa-xl"></i></a>
+                        <div class="col-lg-3 p-lg-2 ps-lg-5">
+                            <img src="assets/img/p.jpeg" class="img-fluid rounded-circle">
                         </div>
-                        <div class="col-md-6 mt-3">
-                            <a class="btn btn-outline-light mt-2" href="assets/Jhonier_Perea_cv.pdf" target="_blank"><i class="fa-regular fa-file-pdf pe-2"></i>Curriculum</a>
+                        <div class="col-lg-8 mx-auto">
+                            <h3 class="bungee my-3 my-lg-5">Jhonier Alejandro <br class="d-md-none"> Perea Derazo</h3>
+                            <h4>Software Developer &nbsp;&nbsp;<br class="d-md-none"><span class="d-none d-md-inline-block">/</span>&nbsp;&nbsp; Web Designer</h4><hr>
+                            <div class="row">
+                                <div class="col-md-6 mt-md-3">
+                                    <a class="btn btn-outline-light rounded-circle p-3 me-2 me-lg-3" href="https://wa.me/573013127037" target="_blank"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+                                    <a class="btn btn-outline-light rounded-circle p-3 me-2 me-lg-3" href="https://www.linkedin.com/in/jhonierperea/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                                    <a class="btn btn-outline-light rounded-circle p-3 me-2 me-lg-3" href="https://github.com/jhwperea" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+                                    <a class="btn btn-outline-light rounded-circle p-3 me-2 me-lg-3" href="mailto:jhwperea@gmail.com"><i class="fa-regular fa-envelope fa-xl"></i></a>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <a class="btn btn-outline-light mt-2" href="assets/CV-JhonierPerea.pdf" target="_blank"><i class="fa-regular fa-file-pdf pe-2"></i>Curriculum</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="row py-5 px-2 px-md-5 text-center bg-light" id="works">
-                <h4 class="bungee pb-4 text-primary">Recent Works</h4>
-                <a v-for="work in works" :href="work.url" target="_blank" class="col-12 col-sm-6 col-md-4 col-lg-3 p-3">
-                    <img :src="'assets/img/works/'+work.src+'.png'" class="img-fluid rounded shadow">
-                    <h5 class="text-primary mt-3"><strong v-text="work.name"></strong></h5>
-                </a>
+            <section class="row bg-white shadow" id="jobs">
+                <div class="container px-5">
+                    <h4 class="bungee a p-5 text-center" @click="viewjobs = !viewjobs">Work Experience
+                        <i class="fa ms-lg-3 d-none d-lg-inline-block" :class="viewjobs ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+                    </h4>
+                    <div v-if="viewjobs" class="col-lg-8 mx-auto pb-5">
+                        <span v-for="job in jobs" class="col-12 p-3 mb-4 animated">
+                            <h3 class="text-primary text-center text-lg-start"
+                                v-html="job.company+'&nbsp;&nbsp;<br class=\'d-md-none\'><code class=\'text-muted small\'>'+job.period+'</code>'"
+                            ></h3>
+                            <h4 class="text-justify" v-html="job.description"></h4>
+                        </span>
+                    </div>
+                </div>
             </section>
-            <section class="row py-5 px-2 px-md-5 text-center bg-texture" id="skills">
-                <h4 class="bungee pb-4 text-primary">Skills</h4>
-                <figure class="col-3 col-sm-2 col-lg-1 mb-2 mb-lg-5 mx-lg-4" v-for="skill in skills">
-                    <img class="img-fluid p-2" :src="'assets/img/skills/'+skill.src+'.png'">
-                    <h5 class="mt-3"><strong v-text="skill.description"></strong></h5>
-                </figure>
+            <section class="row bg-texture shadow text-center px-5" id="skills">
+                <div class="container px-lg-5">
+                    <h4 class="bungee a p-5 text-center" @click="viewskills = !viewskills">Skills
+                        <i class="fa ms-lg-3 d-none d-lg-inline-block" :class="viewskills ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+                    </h4>
+                    <div v-if="viewskills" class="row px-lg-5 pt-0 pb-5">
+                        <figure v-for="skill in skills" class="col-6 col-sm-3 col-lg-1 mb-2 mb-lg-5 mx-lg-3">
+                            <img class="img-fluid p-2" :src="'assets/img/skills/'+skill.src+'.png'">
+                            <h5 class="text-primary mt-3"><strong v-text="skill.description"></strong></h5>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <section class="row bg-light shadow text-center" id="works">
+                <div class="container px-4 px-lg-5">
+                    <h4 class="bungee a p-5 text-center" @click="viewworks = !viewworks">Work Gallery
+                        <i class="fa ms-lg-3 d-none d-lg-inline-block" :class="viewworks ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+                    </h4>
+                    <div v-if="viewworks" class="row px-lg-5 pt-0">
+                        <a v-for="work in works" :key="work.src" :href="work.url" target="_blank" class="col-12 col-sm-6 col-md-4 col-lg-3 p-lg-3 mb-5 mb-lg-3">
+                            <img :src="'assets/img/works/'+work.src+'.png'" class="img-fluid rounded shadow">
+                            <h5 class="text-primary mt-3"><strong v-text="work.name"></strong></h5>
+                        </a>
+                    </div>
+                </div>
             </section>
         </main>
     </body>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://unpkg.com/axios@0.19.0/dist/axios.min.js"></script>
     <script src="assets/js/app.js"></script>
 </html>

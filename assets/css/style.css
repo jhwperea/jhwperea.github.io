@@ -4,7 +4,9 @@
 .bungee{ font-family: 'Bungee' }
 .shadow{ box-shadow: 1px 5px 15px gray !important }
 .text-primary{ color: steelblue !important }
-a, a:hover{ text-decoration: none; cursor: pointer }
+a, a:hover, .a, .a:hover{ text-decoration: none; cursor: pointer }
 .bg-texture{ background-image: url('../img/bg.jpg'); background-attachment: fixed }
-.bg-blue{ background-image: url('../img/bg-blue.jpg'); background-size: cover; background-attachment: fixed }
-.dev{ border: solid 1px red }
+.bg-black{ background-image: url('../img/bg-black.jpg'); background-size: 400px; background-attachment: fixed }
+.text-justify{ text-align: justify !important }
+.small{ font-size: 55% !important }
+.dev{ border: 1px solid red !important }

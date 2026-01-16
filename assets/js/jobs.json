@@ -1,0 +1,16 @@
+[
+    { "company": "Bluedata, Cosmitet", "period": "(Dec. 2023 - Dec. 2025)", "description": "Web application development for document management, developed with Nuxt connected to Laravel and SpringBoot Backend" },
+    { "company": "Existaya, STP Networks", "period": "(Feb. 2023 - Jul. 2023)", "description": "Custom Wordpress templates development, Pixel perfect, Html5, Css3, Sass, Es6." },
+    { "company": "Blueweb, SocialBoil", "period": "(Jun. 2022 - Jan. 2023)", "description": "Custom Umbraco templates development, Pixel perfect, Html5, Css3, Sass, Es6." },
+    { "company": "Soluproperty", "period": "(Jan. 2022 - Jun. 2022)", "description": "Support technical for the assembly software, condominium, customer service, logistics planning and database backups generated in assemblies." },
+    { "company": "Colombia Software", "period": "(Jul. 2021 - Dec. 2021)", "description": "Development of application for transportation sector using PHP." },
+    { "company": "Soluproperty", "period": "(Jun. 2020 - May. 2021)", "description": "Development of software for assemblies, condominium, customer service, logistics planning and database backups generated in assemblies." },
+    { "company": "Quipa Group", "period": "(Aug. 2019 - Apr. 2020)", "description": "Development of hotel management software, built with Laravel and Vue." },
+    { "company": "Soluproperty", "period": "(Sept. 2018 - Jul. 2019)", "description": "Development and support technical for the assembly software, condominium, customer service, logistics planning and database backups generated in assemblies." },
+    { "company": "All Connect", "period": "(Jan. 2018 - Jul. 2018)", "description": "Development of application to the measure with georeferencing and notifications." },
+    { "company": "AJ Investments, LLC", "period": "(Jun. 2017 - Dec. 2017)", "description": "Development of application for document management, modules of tutoring and content storage." },
+    { "company": "Orion Marketing", "period": "(Oct. 2016 - Jun. 2017)", "description": "Development of Application for paper management, custom websites, online stores." },
+    { "company": "Opal Group", "period": "(Nov. 2015 - Oct. 2016)", "description": "Development of CRM to the measure using Sugar CRM, based on PHP, with integrations of Angular and MySQL." },
+    { "company": "Orion Marketing", "period": "(Feb. 2014 - Nov. 2015)", "description": "Development of custom websites, online stores." },
+    { "company": "Agriculture Department, Umata", "period": "(Jun. 2013 - Feb. 2014)", "description": "Development of software for document management, built with PHP, jQuery, Html, Css and Javascript." }
+]
