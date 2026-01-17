@@ -1,0 +1,4 @@
+html{ scroll-behavior: smooth }
+body{ background-color: #090d18; color: #f1f5f9 }
+.glass-card{ background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.1) }
+.text-gradient{ background: linear-gradient(to right, #06b6d4, #274efd); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent }
