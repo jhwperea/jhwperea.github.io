@@ -9,4 +9,3 @@ a, a:hover, .a, .a:hover{ text-decoration: none; cursor: pointer }
 .bg-black{ background-image: url('../img/bg-black.jpg'); background-size: 400px; background-attachment: fixed }
 .text-justify{ text-align: justify !important }
 .small{ font-size: 55% !important }
-.dev{ border: 1px solid red !important }

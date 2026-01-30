@@ -40,7 +40,7 @@
                                     <a class="btn btn-outline-light rounded-circle p-3 me-2 me-lg-3" href="mailto:jhwperea@gmail.com"><i class="fa-regular fa-envelope fa-xl"></i></a>
                                 </div>
                                 <div class="col-md-6 mt-3">
-                                    <a class="btn btn-outline-light mt-2" href="assets/CV-JhonierPerea.pdf" target="_blank"><i class="fa-regular fa-file-pdf pe-2"></i>Curriculum</a>
+                                    <a class="btn btn-outline-light mt-2" href="assets/CVJhonierPerea.pdf" target="_blank"><i class="fa-regular fa-file-pdf pe-2"></i>Curriculum</a>
                                 </div>
                             </div>
                         </div>
@@ -49,16 +49,20 @@
             </section>
             <section class="row bg-white shadow" id="jobs">
                 <div class="container px-5">
-                    <h4 class="bungee a p-5 text-center" @click="viewjobs = !viewjobs">Work Experience
-                        <i class="fa ms-lg-3 d-none d-lg-inline-block" :class="viewjobs ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+                    <h4 class="bungee a p-5 text-center" @click="openModal('experienceModal')">Work Experience
+                        <i class="far fa-folder-open ms-lg-3 d-none d-lg-inline-block"></i>
                     </h4>
-                    <div v-if="viewjobs" class="col-lg-8 mx-auto pb-5">
-                        <span v-for="job in jobs" class="col-12 p-3 mb-4 animated">
-                            <h3 class="text-primary text-center text-lg-start"
-                                v-html="job.company+'&nbsp;&nbsp;<br class=\'d-md-none\'><code class=\'text-muted small\'>'+job.period+'</code>'"
-                            ></h3>
-                            <h4 class="text-justify" v-html="job.description"></h4>
-                        </span>
+                </div>
+                <div class="modal fade" id="experienceModal" tabindex="-1" aria-labelledby="experienceModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body p-0">
+                                <iframe src="experience.html" title="Experience page" class="w-100 p-0" style="height: 100vh"></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -92,5 +96,6 @@
     </body>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://unpkg.com/axios@0.19.0/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"></script>
     <script src="assets/js/app.js"></script>
 </html>
