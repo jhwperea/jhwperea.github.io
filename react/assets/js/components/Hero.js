@@ -1,5 +1,17 @@
+const { useState, useEffect, useRef } = React;
 const Hero = () => {
     const SocialLink = window.SocialLink;
+    const [cvOpen, setCvOpen] = useState(false);
+    const cvRef = useRef(null);
+    useEffect(() => {
+        const closeOnClickOutside = (event) => {
+            if(cvRef.current && !cvRef.current.contains(event.target)) {
+                setCvOpen(false);
+            }
+        };
+        document.addEventListener('mousedown', closeOnClickOutside);
+        return () => document.removeEventListener('mousedown', closeOnClickOutside);
+    }, []);
     return (
         <section id="about" className="min-h-screen flex flex-col justify-center items-center px-6 pt-20 relative">
             <div className="max-w-4xl w-full grid md:grid-cols-2 gap-12 items-center">
@@ -20,16 +32,42 @@ const Hero = () => {
                             <i className="fa-regular fa-envelope text-xl"></i>
                         </a>
                     </div>
-                    <a href="../assets/Cv-JhonierPerea.pdf" target="_blank"
-                        className="inline-flex items-center gap-2 px-8 py-3 rounded-xl bg-white text-dark font-bold hover:bg-accent-cyan hover:text-white transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(6,182,212,0.6)]">
-                        <i className="fa-regular fa-file-pdf"></i> Download CV
-                    </a>
+                    <div ref={cvRef} className="relative inline-block text-left">
+                        <button
+                            onClick={() => setCvOpen((prev) => !prev)}
+                            type="button"
+                            aria-haspopup="menu"
+                            aria-expanded={cvOpen}
+                            className="inline-flex items-center gap-2 px-8 py-3 rounded-xl bg-white text-dark font-bold hover:bg-accent-cyan hover:text-white transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(6,182,212,0.6)]"
+                        >
+                            <i className="fa-regular fa-file-pdf"></i>
+                            Curriculum
+                            <i className={`fa-solid fa-chevron-down ml-2 transition-transform ${cvOpen ? 'rotate-180' : ''}`} />
+                        </button>
+                        {cvOpen && (
+                            <div className="absolute left-0 my-2 w-56 rounded-xl bg-slate-900 border border-slate-700 text-sm shadow-2xl z-50">
+                                <a href="../assets/pdf/JhonierPereaCV-ES.pdf" target="_blank" className="block px-4 py-2 text-white hover:bg-slate-700 rounded-t-lg">
+                                    <i className="fa-regular fa-file-pdf pe-2"></i>ATS (Spanish)
+                                </a>
+                                <a href="../assets/pdf/JhonierPereaCV-EN.pdf" target="_blank" className="block px-4 py-2 text-white hover:bg-slate-700">
+                                    <i className="fa-regular fa-file-pdf pe-2"></i>ATS (English)
+                                </a>
+                                <div className="border-t border-slate-700"/>
+                                <a href="../assets/pdf/JhonierPereaHV-ES.pdf" target="_blank" className="block px-4 py-2 text-white hover:bg-slate-700">
+                                    <i className="fa-regular fa-file-pdf pe-2"></i>Classic (Spanish)
+                                </a>
+                                <a href="../assets/pdf/JhonierPereaHV-EN.pdf" target="_blank" className="block px-4 py-2 text-white hover:bg-slate-700 rounded-b-lg">
+                                    <i className="fa-regular fa-file-pdf pe-2 pb-3"></i>Classic (English)
+                                </a>
+                            </div>
+                        )}
+                    </div>
                 </div>
                 <div className="order-1 md:order-2 flex justify-center relative animate-fade-in">
                     <div className="relative w-64 h-64 md:w-80 md:h-80">
                         <div className="absolute inset-0 rounded-full border-2 border-accent-cyan/30 animate-[spin_10s_linear_infinite]"></div>
                         <div className="absolute inset-4 rounded-full border-2 border-accent-violet/30 animate-[spin_15s_linear_infinite_reverse]"></div>
-                        <img src="../assets/img/p.jpeg" alt="Jhonier Perea" className="absolute inset-2 w-[calc(100%-16px)] h-[calc(100%-16px)] object-cover rounded-full border-4 border-dark shadow-2xl" />
+                        <img src="../assets/img/p.jpeg" alt="Jhonier Perea" className="absolute inset-2 w-[calc(100%-16px)] h-[calc(100%-16px)] object-cover rounded-full border-4 border-dark shadow-2xl"/>
                     </div>
                 </div>
             </div>
