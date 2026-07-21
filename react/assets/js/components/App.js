@@ -57,8 +57,8 @@ const App = () => {
                         </div>
                     </div>
                 </section>
-                <footer className="py-12 text-center text-slate-600 text-sm border-t border-slate-800 mt-12 bg-darker">
-                    <p>© {new Date().getFullYear()} Jhonier Alejandro Perea. Built with React & Tailwind.</p>
+                <footer className="py-12 text-center text-slate-100 text-sm border-t border-slate-800 mt-12 bg-darker">
+                    <p>© {new Date().getFullYear()} Jhonier Alejandro Perea Derazo - Built with React & Tailwind.</p>
                 </footer>
             </main>
         </div>

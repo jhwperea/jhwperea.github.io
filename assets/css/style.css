@@ -6,6 +6,5 @@
 .text-primary{ color: steelblue !important }
 a, a:hover, .a, .a:hover{ text-decoration: none; cursor: pointer }
 .bg-texture{ background-image: url('../img/bg.jpg'); background-attachment: fixed }
-.bg-black{ background-image: url('../img/bg-black.jpg'); background-size: 400px; background-attachment: fixed }
 .text-justify{ text-align: justify !important }
 .small{ font-size: 55% !important }

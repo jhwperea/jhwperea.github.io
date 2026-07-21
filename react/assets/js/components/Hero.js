@@ -45,19 +45,12 @@ const Hero = () => {
                             <i className={`fa-solid fa-chevron-down ml-2 transition-transform ${cvOpen ? 'rotate-180' : ''}`} />
                         </button>
                         {cvOpen && (
-                            <div className="absolute left-0 my-2 w-56 rounded-xl bg-slate-900 border border-slate-700 text-sm shadow-2xl z-50">
-                                <a href="../assets/pdf/JhonierPereaCV-ES.pdf" target="_blank" className="block px-4 py-2 text-white hover:bg-slate-700 rounded-t-lg">
-                                    <i className="fa-regular fa-file-pdf pe-2"></i>ATS (Spanish)
+                            <div className="absolute left-0 my-2 w-56 rounded-xl bg-slate-900 border border-slate-700 text-sm shadow-2xl z-50 mb-5">
+                                <a href="../assets/pdf/JhonierPerea-ES.pdf" target="_blank" className="block px-4 py-2 text-white hover:bg-slate-700 rounded-t-lg">
+                                    <i className="fa-regular fa-file-pdf pe-2"></i>Spanish
                                 </a>
-                                <a href="../assets/pdf/JhonierPereaCV-EN.pdf" target="_blank" className="block px-4 py-2 text-white hover:bg-slate-700">
-                                    <i className="fa-regular fa-file-pdf pe-2"></i>ATS (English)
-                                </a>
-                                <div className="border-t border-slate-700"/>
-                                <a href="../assets/pdf/JhonierPereaHV-ES.pdf" target="_blank" className="block px-4 py-2 text-white hover:bg-slate-700">
-                                    <i className="fa-regular fa-file-pdf pe-2"></i>Classic (Spanish)
-                                </a>
-                                <a href="../assets/pdf/JhonierPereaHV-EN.pdf" target="_blank" className="block px-4 py-2 text-white hover:bg-slate-700 rounded-b-lg">
-                                    <i className="fa-regular fa-file-pdf pe-2 pb-3"></i>Classic (English)
+                                <a href="../assets/pdf/JhonierPerea-EN.pdf" target="_blank" className="block px-4 py-2 text-white hover:bg-slate-700">
+                                    <i className="fa-regular fa-file-pdf pe-2"></i>English
                                 </a>
                             </div>
                         )}
@@ -70,9 +63,6 @@ const Hero = () => {
                         <img src="../assets/img/p.jpeg" alt="Jhonier Perea" className="absolute inset-2 w-[calc(100%-16px)] h-[calc(100%-16px)] object-cover rounded-full border-4 border-dark shadow-2xl"/>
                     </div>
                 </div>
-            </div>
-            <div className="absolute bottom-10 animate-bounce text-slate-500">
-                <i className="fa-solid fa-arrow-down"></i>
             </div>
         </section>
     );
